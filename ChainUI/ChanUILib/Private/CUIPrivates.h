@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CUIPrivates : NSObject
+@interface NSObject (CUIPrivate)
 
 + (BOOL)ner_swizzleMethod:(SEL)selector1 withMethod:(SEL)selector2;
 + (BOOL)ner_swizzleClassMethod:(SEL)selector1 withMethod:(SEL)selector2;
