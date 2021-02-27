@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  ChainUI
+//
+//  Created by Joe.cheng on 2021/2/27.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "ChainUI.h"
+
+#endif /* PrefixHeader_pch */
