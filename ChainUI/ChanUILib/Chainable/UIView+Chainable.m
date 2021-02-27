@@ -5,13 +5,10 @@
 //  Created by Joe.cheng on 2021/2/25.
 //
 
-#import "UIView+ChainUI.h"
+#import "UIView+Chainable.h"
 #import "CUIPrivates.h"
 
-#define CUI_SAFE_ASSIGN(a, b)   if (b != CUINull && b!= NSIntegerMin) a = b
-#define CUINull             NSIntegerMax
-
-@implementation UIView (ChainUI)
+@implementation UIView (Chainable)
 
 - (CUIChainableUIViewIntBlock)tg {
     CUI_INT_BLOCK(self.tag = value);
@@ -161,6 +158,7 @@
 @implementation UIView (CUIChainable_Frame)
 
 
+#define CUINull             NSIntegerMax
 #define CUI_SAFE_ASSIGN(a, b)   if (b != CUINull && b!= NSIntegerMin) a = b
 
 - (CUIChainableUIViewRectBlock)xywh {

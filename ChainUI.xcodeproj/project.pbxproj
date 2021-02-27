@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163AFE5025E9E70000A4FD35 /* UIView+ChainUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 163AFE4C25E9E70000A4FD35 /* UIView+ChainUI.m */; };
+		163AFE5025E9E70000A4FD35 /* UIView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 163AFE4C25E9E70000A4FD35 /* UIView+Chainable.m */; };
 		16566DF125E794AA00B79029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16566DF025E794AA00B79029 /* AppDelegate.m */; };
 		16566DF425E794AA00B79029 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16566DF325E794AA00B79029 /* SceneDelegate.m */; };
 		16566DF725E794AA00B79029 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16566DF625E794AA00B79029 /* ViewController.m */; };
@@ -25,9 +25,9 @@
 
 /* Begin PBXFileReference section */
 		163AFE4825E9E69100A4FD35 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		163AFE4C25E9E70000A4FD35 /* UIView+ChainUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainUI.m"; sourceTree = "<group>"; };
+		163AFE4C25E9E70000A4FD35 /* UIView+Chainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chainable.m"; sourceTree = "<group>"; };
 		163AFE4D25E9E70000A4FD35 /* ChainUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainUI.h; sourceTree = "<group>"; };
-		163AFE4E25E9E70000A4FD35 /* UIView+ChainUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainUI.h"; sourceTree = "<group>"; };
+		163AFE4E25E9E70000A4FD35 /* UIView+Chainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chainable.h"; sourceTree = "<group>"; };
 		163AFE4F25E9E70000A4FD35 /* CUIDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUIDefs.h; sourceTree = "<group>"; };
 		16566DEC25E794AA00B79029 /* ChainUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16566DEF25E794AA00B79029 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		16FD666325EA271C0044E614 /* Chainable */ = {
 			isa = PBXGroup;
 			children = (
-				163AFE4E25E9E70000A4FD35 /* UIView+ChainUI.h */,
-				163AFE4C25E9E70000A4FD35 /* UIView+ChainUI.m */,
+				163AFE4E25E9E70000A4FD35 /* UIView+Chainable.h */,
+				163AFE4C25E9E70000A4FD35 /* UIView+Chainable.m */,
 				16FD668825EA3A520044E614 /* UIColor+Chainable.h */,
 				16FD668925EA3A520044E614 /* UIColor+Chainable.m */,
 			);
@@ -225,7 +225,7 @@
 				16FD666E25EA2A420044E614 /* CUIUtils.m in Sources */,
 				16FD667725EA2DA70044E614 /* CUIStyle.m in Sources */,
 				16566DF125E794AA00B79029 /* AppDelegate.m in Sources */,
-				163AFE5025E9E70000A4FD35 /* UIView+ChainUI.m in Sources */,
+				163AFE5025E9E70000A4FD35 /* UIView+Chainable.m in Sources */,
 				16566E0225E794AC00B79029 /* main.m in Sources */,
 				16566DF425E794AA00B79029 /* SceneDelegate.m in Sources */,
 				16FD668A25EA3A520044E614 /* UIColor+Chainable.m in Sources */,

@@ -113,7 +113,7 @@ CUI_PROP(v, Object)             addChild;
 
 
 typedef id(^CUIcallback)(id,id);
-@interface UIView (ChainUI)
+@interface UIView (Chainable)
 
 CUI_VIEW_PROPS(UIView)
 

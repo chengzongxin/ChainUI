@@ -7,5 +7,5 @@
 
 #import "CUIDefs.h"
 #import "UIView+CUIFrame.h"
-#import "UIView+ChainUI.h"
+#import "UIView+Chainable.h"
 #import "UIColor+Chainable.h"
