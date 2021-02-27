@@ -117,9 +117,9 @@
                      );
 }
 
-//- (CUIChainableUIViewObjectBlock)addChild {
-//    CUI_OBJECT_BLOCK([self ner_addChild:value]);
-//}
+- (CUIChainableUIViewObjectBlock)addChild {
+    CUI_OBJECT_BLOCK([self ner_addChild:value]);
+}
 
 - (instancetype)clip {
     self.clipsToBounds = YES;

@@ -15,6 +15,7 @@
 		16566DFC25E794AC00B79029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16566DFB25E794AC00B79029 /* Assets.xcassets */; };
 		16566DFF25E794AC00B79029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16566DFD25E794AC00B79029 /* LaunchScreen.storyboard */; };
 		16566E0225E794AC00B79029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16566E0125E794AC00B79029 /* main.m */; };
+		165D36AC25EA6F08009E1E1C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165D36AB25EA6F08009E1E1C /* TestViewController.m */; };
 		16FD666825EA28F70044E614 /* UIView+CUIFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD666725EA28F70044E614 /* UIView+CUIFrame.m */; };
 		16FD666E25EA2A420044E614 /* CUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD666D25EA2A420044E614 /* CUIUtils.m */; };
 		16FD667325EA2CCF0044E614 /* CUITypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD667225EA2CCF0044E614 /* CUITypeConverter.m */; };
@@ -41,6 +42,8 @@
 		16566DFE25E794AC00B79029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16566E0025E794AC00B79029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16566E0125E794AC00B79029 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		165D36AA25EA6F08009E1E1C /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		165D36AB25EA6F08009E1E1C /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		16FD666625EA28F70044E614 /* UIView+CUIFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CUIFrame.h"; sourceTree = "<group>"; };
 		16FD666725EA28F70044E614 /* UIView+CUIFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CUIFrame.m"; sourceTree = "<group>"; };
 		16FD666C25EA2A420044E614 /* CUIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUIUtils.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				16566DF325E794AA00B79029 /* SceneDelegate.m */,
 				16566DF525E794AA00B79029 /* ViewController.h */,
 				16566DF625E794AA00B79029 /* ViewController.m */,
+				165D36AA25EA6F08009E1E1C /* TestViewController.h */,
+				165D36AB25EA6F08009E1E1C /* TestViewController.m */,
 				163AFE4825E9E69100A4FD35 /* PrefixHeader.pch */,
 				16566DF825E794AA00B79029 /* Main.storyboard */,
 				16566DFB25E794AC00B79029 /* Assets.xcassets */,
@@ -224,6 +229,7 @@
 				16566DF725E794AA00B79029 /* ViewController.m in Sources */,
 				16FD666E25EA2A420044E614 /* CUIUtils.m in Sources */,
 				16FD667725EA2DA70044E614 /* CUIStyle.m in Sources */,
+				165D36AC25EA6F08009E1E1C /* TestViewController.m in Sources */,
 				16566DF125E794AA00B79029 /* AppDelegate.m in Sources */,
 				163AFE5025E9E70000A4FD35 /* UIView+Chainable.m in Sources */,
 				16566E0225E794AC00B79029 /* main.m in Sources */,
