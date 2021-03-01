@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "291"
             endingLineNumber = "291"
-            landmarkName = "-cui_containLinkGesture"
+            landmarkName = "-cui_handleLinkGesture:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "311"
             endingLineNumber = "311"
-            landmarkName = "-cui_handleLinkGesture:"
+            landmarkName = "-cui_handleTouchBegin:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
