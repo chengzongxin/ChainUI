@@ -14,23 +14,23 @@
 }
 
 - (CUIChainableUIColorFloatBlock)hueOffset {
-    CUI_FLOAT_BLOCK(return [self ner_colorWithHueOffset:value saturationOffset:0 brightnessOffset:0]);
+    CUI_FLOAT_BLOCK(return [self cui_colorWithHueOffset:value saturationOffset:0 brightnessOffset:0]);
 }
 
 - (CUIChainableUIColorFloatBlock)saturate {
-    CUI_FLOAT_BLOCK(return [self ner_colorWithHueOffset:0 saturationOffset:value brightnessOffset:0];);
+    CUI_FLOAT_BLOCK(return [self cui_colorWithHueOffset:0 saturationOffset:value brightnessOffset:0];);
 }
 
 - (CUIChainableUIColorFloatBlock)desaturate {
-    CUI_FLOAT_BLOCK(return [self ner_colorWithHueOffset:0 saturationOffset:-value brightnessOffset:0]);
+    CUI_FLOAT_BLOCK(return [self cui_colorWithHueOffset:0 saturationOffset:-value brightnessOffset:0]);
 }
 
 - (CUIChainableUIColorFloatBlock)brighten {
-    CUI_FLOAT_BLOCK(return [self ner_colorWithHueOffset:0 saturationOffset:0 brightnessOffset:value]);
+    CUI_FLOAT_BLOCK(return [self cui_colorWithHueOffset:0 saturationOffset:0 brightnessOffset:value]);
 }
 
 - (CUIChainableUIColorFloatBlock)darken {
-    CUI_FLOAT_BLOCK(return [self ner_colorWithHueOffset:0 saturationOffset:0 brightnessOffset:-value]);
+    CUI_FLOAT_BLOCK(return [self cui_colorWithHueOffset:0 saturationOffset:0 brightnessOffset:-value]);
 }
 
 - (instancetype)complimentary {

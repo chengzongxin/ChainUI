@@ -89,7 +89,7 @@
 
 @implementation UILabel (CUILink)
 
-CUI_SYNTHESIZE_FLOAT(nerLineGap, setNerLineGap, [self ner_updateAttributedString]);
+CUI_SYNTHESIZE_FLOAT(nerLineGap, setNerLineGap, [self cui_updateAttributedString]);
 
 CUI_SYNTHESIZE(nerLinkSelectedColor, setNerLinkSelectedColor);
 CUI_SYNTHESIZE(nerSelectedLinkInfo, setNerSelectedLinkInfo);
@@ -110,32 +110,32 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
 }
 
 + (void)load {
-    [self ner_swizzleMethod:@selector(setText:) withMethod:@selector(ner_setText:)];
-    [self ner_swizzleMethod:@selector(setUserInteractionEnabled:) withMethod:@selector(ner_setUserInteractionEnabled:)];
+    [self cui_swizzleMethod:@selector(setText:) withMethod:@selector(cui_setText:)];
+    [self cui_swizzleMethod:@selector(setUserInteractionEnabled:) withMethod:@selector(cui_setUserInteractionEnabled:)];
     [self setDefaultLinkSelectedBackgroundColor:[UIColor darkGrayColor] borderRadius:4];
 }
 
-- (void)ner_updateAttributedString {
+- (void)cui_updateAttributedString {
     if (self.attributedText.string.length) {
         NSMutableAttributedString *att = [self.attributedText mutableCopy];
-        [att ner_setParagraphStyleValue:@(self.nerLineGap) forKey:@"lineSpacing"];
+        [att cui_setParagraphStyleValue:@(self.nerLineGap) forKey:@"lineSpacing"];
         self.attributedText = att;
     }
 }
 
-- (void)ner_setText:(NSString *)text {
-    [self ner_setText:text];
+- (void)cui_setText:(NSString *)text {
+    [self cui_setText:text];
     
     if (self.nerLineGap > 0) {
-        [self ner_updateAttributedString];
+        [self cui_updateAttributedString];
     }
 }
 
-- (void)ner_setUserInteractionEnabled:(BOOL)userInteractionEnabled {
-    [self ner_setUserInteractionEnabled:userInteractionEnabled];
+- (void)cui_setUserInteractionEnabled:(BOOL)userInteractionEnabled {
+    [self cui_setUserInteractionEnabled:userInteractionEnabled];
     
-    if (userInteractionEnabled && ![self ner_containLinkGesture]) {
-        id reg = [[CUILinkGestureRegcognizer alloc] initWithTarget:self action:@selector(ner_handleLinkGesture:)];
+    if (userInteractionEnabled && ![self cui_containLinkGesture]) {
+        id reg = [[CUILinkGestureRegcognizer alloc] initWithTarget:self action:@selector(cui_handleLinkGesture:)];
         [self addGestureRecognizer:reg];
     }
 }
@@ -160,11 +160,11 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
     }
     
     NSMutableAttributedString *att = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
-    [att ner_addAttributeIfNotExist:NSFontAttributeName value:self.font range:[att.string ner_fullRange]];
-    [att ner_setParagraphStyleValue:@(self.textAlignment) forKey:@"alignment" range:NSMakeRange(0, att.string.length)];
+    [att cui_addAttributeIfNotExist:NSFontAttributeName value:self.font range:[att.string cui_fullRange]];
+    [att cui_setParagraphStyleValue:@(self.textAlignment) forKey:@"alignment" range:NSMakeRange(0, att.string.length)];
     
     if (self.numberOfLines != 1 && self.lineBreakMode != NSLineBreakByCharWrapping && self.lineBreakMode != NSLineBreakByWordWrapping) {
-        [att ner_setParagraphStyleValue:@(NSLineBreakByWordWrapping) forKey:@"lineBreakMode" range:NSMakeRange(0, att.string.length)];
+        [att cui_setParagraphStyleValue:@(NSLineBreakByWordWrapping) forKey:@"lineBreakMode" range:NSMakeRange(0, att.string.length)];
     }
     
     [layoutManager.textStorage setAttributedString:att];
@@ -176,7 +176,7 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
     return layoutManager;
 }
 
-- (void)ner_addHighlightedLayersForLinkInfo:(CUILinkInfo *)info {
+- (void)cui_addHighlightedLayersForLinkInfo:(CUILinkInfo *)info {
     if (!self.nerSelectedLayers) {
         self.nerSelectedLayers = [NSMutableArray array];
     }
@@ -185,12 +185,12 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
         CGRect rect = [rectValue CGRectValue];
         
         if (rect.size.width > 0 && rect.size.height > 0) {
-            [self ner_addHighlightedLayerWithFrame:rect];
+            [self cui_addHighlightedLayerWithFrame:rect];
         }
     }
 }
 
-- (void)ner_addHighlightedLayerWithFrame:(CGRect)rect {
+- (void)cui_addHighlightedLayerWithFrame:(CGRect)rect {
     CALayer *layer = [CALayer new];
     layer.frame = rect;
     
@@ -214,7 +214,7 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
 
 - (void)removeHighlightedViews {
     [NSObject cancelPreviousPerformRequestsWithTarget:self
-                                             selector:@selector(ner_addHighlightedLayersForLinkInfo:)
+                                             selector:@selector(cui_addHighlightedLayersForLinkInfo:)
                                                object:self.nerSelectedLinkInfo];
     
     for (CALayer *layer in self.nerSelectedLayers) {
@@ -278,7 +278,7 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
 }
 
 
-- (BOOL)ner_containLinkGesture {
+- (BOOL)cui_containLinkGesture {
     for (id reg in self.gestureRecognizers) {
         if ([reg isKindOfClass:[CUILinkGestureRegcognizer class]]) {
             return YES;
@@ -287,9 +287,9 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
     return NO;
 }
 
-- (void)ner_handleLinkGesture:(UIPanGestureRecognizer *)reg {
+- (void)cui_handleLinkGesture:(UIPanGestureRecognizer *)reg {
     if (reg.state == UIGestureRecognizerStateBegan) {
-        [self ner_handleTouchBegin:reg];
+        [self cui_handleTouchBegin:reg];
         
     } else if (reg.state == UIGestureRecognizerStateChanged) {
         if (!self.nerSelectedLinkInfo) return;
@@ -307,7 +307,7 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
     }
 }
 
-- (void)ner_handleTouchBegin:(UIGestureRecognizer *)reg {
+- (void)cui_handleTouchBegin:(UIGestureRecognizer *)reg {
     self.nerTouchBeginPoint = [reg locationInView:self];
     
     __block CGFloat textYOffset = -1;
@@ -335,7 +335,7 @@ static CGFloat nerPrivateDefaultLinkSelectedBorderRadius = 0;
     for (CUILinkInfo *info in linkInfos) {
         if ([info containsPoint:self.nerTouchBeginPoint]) {
             self.nerSelectedLinkInfo = info;
-            [self performSelector:@selector(ner_addHighlightedLayersForLinkInfo:) withObject:info afterDelay:0.05];
+            [self performSelector:@selector(cui_addHighlightedLayersForLinkInfo:) withObject:info afterDelay:0.05];
         }
     }
 }

@@ -75,7 +75,7 @@
 }
 
 - (CUIChainableUISliderCallbackBlock)onChange {
-    CUI_CALLBACK_BLOCK([self ner_registerOnChangeHandlerWithTarget:target object:object]);
+    CUI_CALLBACK_BLOCK([self cui_registerOnChangeHandlerWithTarget:target object:object]);
 }
 
 - (instancetype)discrete {

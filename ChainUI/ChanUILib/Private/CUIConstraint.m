@@ -28,7 +28,7 @@
     return constraints;
 }
 
-- (NSLayoutConstraint *)ner_madeConstraintSimilarTo:(NSLayoutConstraint *)c2 {
+- (NSLayoutConstraint *)cui_madeConstraintSimilarTo:(NSLayoutConstraint *)c2 {
     for (NSLayoutConstraint *c1 in self.nerMadeConstraints) {
         if (c1.firstItem == c2.firstItem &&
             c1.secondItem == c2.secondItem &&
@@ -42,13 +42,13 @@
     return nil;
 }
 
-- (void)ner_addMadeConstraints:(NSArray *)constraints {
+- (void)cui_addMadeConstraints:(NSArray *)constraints {
     for (NSLayoutConstraint *c in constraints) {
         [self.nerMadeConstraints addObject:c];
     }
 }
 
-- (void)ner_removeAllMadeConstraints {
+- (void)cui_removeAllMadeConstraints {
     for (NSLayoutConstraint *c in self.nerMadeConstraints) { c.active = NO; }
     [self.nerMadeConstraints removeAllObjects];
 }
@@ -83,7 +83,7 @@
 
 - (NSArray *)activateConstraints {
     [NSLayoutConstraint activateConstraints:self.layoutConstraints];
-    [self.firstItem ner_addMadeConstraints:self.layoutConstraints];
+    [self.firstItem cui_addMadeConstraints:self.layoutConstraints];
     return [self.layoutConstraints copy];
 }
 
@@ -97,7 +97,7 @@
     NSMutableArray *newConstraints = [NSMutableArray array];
     
     for (NSLayoutConstraint *constraint in self.layoutConstraints) {
-        NSLayoutConstraint *oldConstraint = [self.firstItem ner_madeConstraintSimilarTo:constraint];
+        NSLayoutConstraint *oldConstraint = [self.firstItem cui_madeConstraintSimilarTo:constraint];
         if (oldConstraint) {
             oldConstraint.constant = constraint.constant;
             [newConstraints addObject:oldConstraint];
@@ -111,7 +111,7 @@
 }
 
 - (NSArray *)remakeConstraints:(id)null {
-    [self.firstItem ner_removeAllMadeConstraints];
+    [self.firstItem cui_removeAllMadeConstraints];
     return [self makeConstraints:nil];
 }
 

@@ -24,6 +24,6 @@
 }
 
 - (CUIChainableUISwitchCallbackBlock)onChange {
-    CUI_CALLBACK_BLOCK(return [self ner_registerOnChangeHandlerWithTarget:target object:object]);
+    CUI_CALLBACK_BLOCK(return [self cui_registerOnChangeHandlerWithTarget:target object:object]);
 }
 @end

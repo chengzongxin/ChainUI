@@ -84,17 +84,17 @@
 - (CUIChainableUIViewCallbackBlock)onClick {
     CUI_CALLBACK_BLOCK(
                         if (CUI_IS_BLOCK(object)) {
-                            SEL action = @selector(ner_view_onClickHandler);
+                            SEL action = @selector(cui_view_onClickHandler);
                             objc_setAssociatedObject(self, action, object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-                            [self ner_view_addClickHandler:self action:action];
+                            [self cui_view_addClickHandler:self action:action];
                         } else {
                             SEL action = NSSelectorFromString(object);
-                            [self ner_view_addClickHandler:target action:action];
+                            [self cui_view_addClickHandler:target action:action];
                         }
     );
 }
 
-- (void)ner_view_addClickHandler:(id)target action:(SEL)action {
+- (void)cui_view_addClickHandler:(id)target action:(SEL)action {
     self.userInteractionEnabled = YES;
     
     if ([self isKindOfClass:[UIButton class]]) {
@@ -107,7 +107,7 @@
     }
 }
 
-- (void)ner_view_onClickHandler {
+- (void)cui_view_onClickHandler {
     id block = objc_getAssociatedObject(self, _cmd);
     if (block) ((CUIObjectBlock)block)(self);
 }
@@ -121,7 +121,7 @@
 }
 
 - (CUIChainableUIViewObjectBlock)addChild {
-    CUI_OBJECT_BLOCK([self ner_addChild:value]);
+    CUI_OBJECT_BLOCK([self cui_addChild:value]);
 }
 
 - (instancetype)clip {

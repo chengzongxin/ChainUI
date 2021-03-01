@@ -11,8 +11,8 @@
 #define Alert           [[CUIAlert alloc] initWithStyle:UIAlertControllerStyleAlert]
 #define ActionSheet     [[CUIAlert alloc] initWithStyle:UIAlertControllerStyleActionSheet]
 
-typedef CUIAlert *(^CUIChainableCUIAlertActionBlock)(id, id);
-typedef UIAlertController *(^CUIAlertShowBlock)();
+typedef CUIAlert *__nullable(^CUIChainableCUIAlertActionBlock)(__nullable id, __nullable id);
+typedef UIAlertController *__nullable(^CUIAlertShowBlock)(void);
 
 /**
  * Examples:

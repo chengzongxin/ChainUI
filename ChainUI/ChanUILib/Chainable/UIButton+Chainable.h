@@ -9,7 +9,7 @@
 #import "CUIDefs.h"
 #import "CUIPrivates.h"
 
-#define Button  [UIButton ner_littleHigherHuggingAndResistanceButton]
+#define Button  [UIButton cui_littleHigherHuggingAndResistanceButton]
 
 NS_ASSUME_NONNULL_BEGIN
 

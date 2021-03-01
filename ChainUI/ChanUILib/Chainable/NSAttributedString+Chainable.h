@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  
     2)
  */
-#define AttStr(...) [NSMutableAttributedString ner_attributedStringWithSubstrings:@[__VA_ARGS__]]
+#define AttStr(...) [NSMutableAttributedString cui_attributedStringWithSubstrings:@[__VA_ARGS__]]
 
 @interface NSAttributedString (Chainable)
 
@@ -208,7 +208,7 @@ CUI_ATT_PROP(Object)    styles;
  * Use to suppress getter side effects warning. Optional.
  * Usages: someAttStr.matchURL.underline.End();
  */
-- (void(^)())End;
+- (void(^)(void))End;
 
 @end
 

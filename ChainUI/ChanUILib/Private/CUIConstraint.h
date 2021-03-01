@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 - (instancetype)initWithFirstItem:(UIView *)firstItem;
-- (instancetype)saveConstraintsAndReset:(id)null;
+- (instancetype)saveConstraintsAndReset:(__nullable id)null;
 
-- (UIView *)getFirstItem:(id)null;
+- (UIView *)getFirstItem:(__nullable id)null;
 - (void)addLayoutAttribute:(NSLayoutAttribute)attribute;
 
 - (void)updateSecondItem:(UIView *)item;
@@ -28,9 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateIdentifier:(NSString *)identifier;
 - (void)updatePriority:(CGFloat)priority;
 
-- (NSArray *)makeConstraints:(id)null;
-- (NSArray *)remakeConstraints:(id)null;
-- (NSArray *)updateConstraints:(id)null;
+- (NSArray *)makeConstraints:(__nullable id)null;
+- (NSArray *)remakeConstraints:(__nullable id)null;
+- (NSArray *)updateConstraints:(__nullable id)null;
 
 @end
 
@@ -43,9 +43,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CUIConstraint *)makeCUIConstraintWithAttribute:(NSLayoutAttribute)attribute;
 
-- (void)makeConstraints:(id)null;
-- (void)remakeConstraints:(id)null;
-- (void)updateConstraints:(id)null;
+- (void)makeConstraints:(__nullable id)null;
+- (void)remakeConstraints:(__nullable id)null;
+- (void)updateConstraints:(__nullable id)null;
 
 @end
 

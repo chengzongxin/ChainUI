@@ -12,31 +12,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (CUIPrivate)
 
-+ (BOOL)ner_swizzleMethod:(SEL)selector1 withMethod:(SEL)selector2;
-+ (BOOL)ner_swizzleClassMethod:(SEL)selector1 withMethod:(SEL)selector2;
++ (BOOL)cui_swizzleMethod:(SEL)selector1 withMethod:(SEL)selector2;
++ (BOOL)cui_swizzleClassMethod:(SEL)selector1 withMethod:(SEL)selector2;
 
-- (id)ner_associatedObjectForKey:(NSString *)key;
-- (void)ner_setAssociatedObject:(id)object forKey:(NSString *)key;
+- (id)cui_associatedObjectForKey:(NSString *)key;
+- (void)cui_setAssociatedObject:(id)object forKey:(NSString *)key;
 
-- (id)ner_weakAssociatedObjectForKey:(NSString *)key;
-- (void)ner_setWeakAssociatedObject:(id)object forKey:(NSString *)key;
+- (id)cui_weakAssociatedObjectForKey:(NSString *)key;
+- (void)cui_setWeakAssociatedObject:(id)object forKey:(NSString *)key;
 
-- (NSArray *)ner_allPropertyNames;
-- (NSArray *)ner_allIvarNames;
-- (NSArray *)ner_allMethodNames;
+- (NSArray *)cui_allPropertyNames;
+- (NSArray *)cui_allIvarNames;
+- (NSArray *)cui_allMethodNames;
 
 @end
 
 
 @interface NSString (CUIPrivate)
 
-- (NSRange)ner_fullRange;
+- (NSRange)cui_fullRange;
 
-- (NSString *)ner_md5;
-- (NSString *)ner_base64;
-- (NSString *)ner_urlEncode;
-- (NSString *)ner_urlDecode;
-- (NSString *)ner_trim;
+- (NSString *)cui_md5;
+- (NSString *)cui_base64;
+- (NSString *)cui_urlEncode;
+- (NSString *)cui_urlDecode;
+- (NSString *)cui_trim;
 
 @end
 
@@ -54,12 +54,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL nerIsJustSettingEffectedRanges;
 @property (nonatomic, strong) NSMutableIndexSet *nerEffectedRanges;
 
-+ (instancetype)ner_attributedStringWithSubstrings:(NSArray *)substrings;
++ (instancetype)cui_attributedStringWithSubstrings:(NSArray *)substrings;
 
-- (void)ner_applyAttribute:(NSString *)name withValue:(id)value;
-- (void)ner_addAttributeIfNotExist:(NSString *)name value:(id)value range:(NSRange)range;
-- (void)ner_setParagraphStyleValue:(id)value forKey:(NSString *)key;
-- (void)ner_setParagraphStyleValue:(id)value forKey:(NSString *)key range:(NSRange)range;
+- (void)cui_applyAttribute:(NSString *)name withValue:(id)value;
+- (void)cui_addAttributeIfNotExist:(NSString *)name value:(id)value range:(NSRange)range;
+- (void)cui_setParagraphStyleValue:(id)value forKey:(NSString *)key;
+- (void)cui_setParagraphStyleValue:(id)value forKey:(NSString *)key range:(NSRange)range;
 
 @end
 
@@ -70,13 +70,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) UIEdgeInsets nerTouchInsets;
 
-- (CGSize)ner_fittingSize;
-- (UIImage *)ner_snapShot;
+- (CGSize)cui_fittingSize;
+- (UIImage *)cui_snapShot;
 
-- (void)ner_addChild:(id)value;
-- (instancetype)ner_updateFrame:(CUIRect)rect;
+- (void)cui_addChild:(id)value;
+- (instancetype)cui_updateFrame:(CUIRect)rect;
 
-+ (instancetype)ner_littleHigherHuggingAndResistanceView;
++ (instancetype)cui_littleHigherHuggingAndResistanceView;
 
 @end
 
@@ -93,8 +93,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat nerGap;
 @property (nonatomic, assign) UIEdgeInsets nerInsets;
 
-+ (instancetype)ner_littleHigherHuggingAndResistanceButton;
-- (instancetype)ner_reverseButton;
++ (instancetype)cui_littleHigherHuggingAndResistanceButton;
+- (instancetype)cui_reverseButton;
 
 @end
 
@@ -109,7 +109,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) CUIObjectBlock nerEndOnExitBlock;
 
 
-+ (instancetype)ner_autoEnableReturnKeyTextField;
++ (instancetype)cui_autoEnableReturnKeyTextField;
 
 @end
 
@@ -120,7 +120,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger nerMaxLength;
 @property (nonatomic, strong) CUIObjectBlock nerTextChangeBlock;
 
-- (void)ner_setPlaceholderText:(id)stringObject;
+- (void)cui_setPlaceholderText:(id)stringObject;
 
 @end
 
@@ -155,14 +155,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIVisualEffectView *nerVibrancyEffectView;
 
-- (void)ner_addVibrancyChild:(id)object;
+- (void)cui_addVibrancyChild:(id)object;
 
 @end
 
 
 @interface UISegmentedControl (CUIPriavte)
 
-+ (instancetype)ner_segmentedControlWithItems:(NSArray *)items;
++ (instancetype)cui_segmentedControlWithItems:(NSArray *)items;
 
 @end
 
@@ -171,28 +171,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIControl (CUIPriavte)
 
-- (instancetype)ner_registerOnChangeHandlerWithTarget:(id)target object:(id)object;
+- (instancetype)cui_registerOnChangeHandlerWithTarget:(id)target object:(id)object;
 
 @end
 
 
 @protocol UIControlPrivateProtocol <NSObject>
 
-- (void)ner_control_onChangeHandler;
+- (void)cui_control_onChangeHandler;
 
 @end
 
 
 @interface UIColor (CUIPrivate)
 
-- (UIColor *)ner_colorWithHueOffset:(CGFloat)ho saturationOffset:(CGFloat)so brightnessOffset:(CGFloat)bo;
+- (UIColor *)cui_colorWithHueOffset:(CGFloat)ho saturationOffset:(CGFloat)so brightnessOffset:(CGFloat)bo;
 
 @end
 
 
 @interface UIImage (CUIPrivate)
 
-- (UIImage *)ner_stretchableImage;
+- (UIImage *)cui_stretchableImage;
 
 
 //https://developer.apple.com/library/content/samplecode/UIImageEffects/Introduction/Intro.html#//apple_ref/doc/uid/DTS40013396
@@ -216,7 +216,7 @@ NS_ASSUME_NONNULL_BEGIN
 //!         by this mask.  This must be an image mask or it must meet the
 //!         requirements of the mask parameter of CGContextClipToMask.
 
-- (UIImage *)ner_blueWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
+- (UIImage *)cui_blueWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
 
 @end
 

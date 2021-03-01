@@ -21,7 +21,7 @@
 }
 
 - (CUIChainableUITextViewObjectBlock)hint {
-    CUI_OBJECT_BLOCK([self ner_setPlaceholderText:value]);
+    CUI_OBJECT_BLOCK([self cui_setPlaceholderText:value]);
 }
 
 - (CUIChainableUITextViewObjectBlock)fnt {

@@ -47,11 +47,11 @@
 }
 
 - (CUIChainableUIImageFloatBlock)blur {
-    CUI_FLOAT_BLOCK(return [self ner_blueWithRadius:value tintColor:nil saturationDeltaFactor:1 maskImage:nil]);
+    CUI_FLOAT_BLOCK(return [self cui_blueWithRadius:value tintColor:nil saturationDeltaFactor:1 maskImage:nil]);
 }
 
 - (instancetype)stretchable {
-    return [self ner_stretchableImage];
+    return [self cui_stretchableImage];
 }
 
 - (instancetype)templates {

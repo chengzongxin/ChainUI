@@ -581,7 +581,7 @@ CUI_SYNTHESIZE(nerAttachSpace, setNerAttachSpace);
 #pragma mark - Lifecycle
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    return [self ner_fittingSize];
+    return [self cui_fittingSize];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {

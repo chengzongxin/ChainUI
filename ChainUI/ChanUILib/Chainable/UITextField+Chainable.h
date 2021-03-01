@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "CUIDefs.h"
 
-#define TextField   [UITextField ner_autoEnableReturnKeyTextField]
+#define TextField   [UITextField cui_autoEnableReturnKeyTextField]
 
 NS_ASSUME_NONNULL_BEGIN
 

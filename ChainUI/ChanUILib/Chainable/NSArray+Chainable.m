@@ -12,7 +12,7 @@
 @implementation NSArray (Chainable)
 
 
-- (id)ner_invokeBlock:(CUIBlockInfo *)blockInfo withValue:(id)value atIndex:(NSInteger)index {
+- (id)cui_invokeBlock:(CUIBlockInfo *)blockInfo withValue:(id)value atIndex:(NSInteger)index {
     id result = nil;
     
 #define INVODE_WITH_RETURN_TYPE(x)  \
@@ -33,7 +33,7 @@
     return result;
 }
 
-- (id)ner_invokeBlock:(CUIBlockInfo *)blockInfo withAccumulator:(id)accumulator value:(id)value atIndex:(NSInteger)index {
+- (id)cui_invokeBlock:(CUIBlockInfo *)blockInfo withAccumulator:(id)accumulator value:(id)value atIndex:(NSInteger)index {
     id result = nil;
     
 #define INVODE_WITH_RETURN_TYPE2(x)  \
@@ -54,7 +54,7 @@
     return result;
 }
 
-- (NSArray *)ner_invokeBlockForEachElement:(id)block filterResult:(BOOL)filter {
+- (NSArray *)cui_invokeBlockForEachElement:(id)block filterResult:(BOOL)filter {
     if (block) {
         CUIBlockInfo *blockInfo = [[CUIBlockInfo alloc] initWithBlock:block];
         
@@ -62,7 +62,7 @@
             NSMutableArray *targets = [NSMutableArray arrayWithCapacity:self.count];
             
             for (NSInteger i = 0; i < self.count; ++i) {
-                id result = [self ner_invokeBlock:blockInfo withValue:self[i] atIndex:i];
+                id result = [self cui_invokeBlock:blockInfo withValue:self[i] atIndex:i];
                 
                 if (!filter) {
                     [targets addObject:result];
@@ -88,7 +88,7 @@
             CUIBlockInfo *blockInfo = [[CUIBlockInfo alloc] initWithBlock:object];
             if (blockInfo.argumentCount > 0) {
                 for (NSInteger i = 0; i < self.count; ++i) {
-                    [self ner_invokeBlock:blockInfo withValue:self[i] atIndex:i];
+                    [self cui_invokeBlock:blockInfo withValue:self[i] atIndex:i];
                 }
             }
         }
@@ -99,13 +99,13 @@
 
 - (NSArray *(^)(id))map {
     return ^(id block) {
-        return [self ner_invokeBlockForEachElement:block filterResult:NO];
+        return [self cui_invokeBlockForEachElement:block filterResult:NO];
     };
 }
 
 - (NSArray *(^)(id))filter {
     return ^(id block) {
-        return [self ner_invokeBlockForEachElement:block filterResult:YES];
+        return [self cui_invokeBlockForEachElement:block filterResult:YES];
     };
 }
 
@@ -134,7 +134,7 @@
                 }
                 
                 for (NSInteger i = beginIndex; i < self.count; ++i) {
-                    accumulator = [self ner_invokeBlock:blockInfo withAccumulator:accumulator value:self[i] atIndex:i];
+                    accumulator = [self cui_invokeBlock:blockInfo withAccumulator:accumulator value:self[i] atIndex:i];
                 }
                 
                 return accumulator;

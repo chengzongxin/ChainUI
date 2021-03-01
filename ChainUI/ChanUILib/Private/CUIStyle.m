@@ -9,7 +9,7 @@
 
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 
-static NSMutableDictionary *ner_styleDict = nil;
+static NSMutableDictionary *cui_styleDict = nil;
 
 @interface CUIStyle ()
 
@@ -145,13 +145,13 @@ static NSMutableDictionary *ner_styleDict = nil;
 }
 
 + (instancetype)styleWithKey:(id <NSCopying>)key {
-    return ner_styleDict[key];
+    return cui_styleDict[key];
 }
 
 + (instancetype)createStyleWithKey:(id <NSCopying>)key {
     CUIStyle *style = [CUIStyle new];
-    if (!ner_styleDict) ner_styleDict = [NSMutableDictionary dictionary];
-    if (key) ner_styleDict[key] = style;
+    if (!cui_styleDict) cui_styleDict = [NSMutableDictionary dictionary];
+    if (key) cui_styleDict[key] = style;
     return style;
 }
 

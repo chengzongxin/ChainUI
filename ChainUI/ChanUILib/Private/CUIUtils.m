@@ -158,7 +158,7 @@
                 image = [UIImage imageNamed:object];     //fallback
                 
             } else {
-                return [image ner_stretchableImage];
+                return [image cui_stretchableImage];
             }
         }
         

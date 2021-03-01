@@ -57,7 +57,7 @@
             exp = [[NSRegularExpression alloc] initWithPattern:value options:0 error:nil];
         }
         
-        NSRange range = [exp rangeOfFirstMatchInString:self options:0 range:[self ner_fullRange]];
+        NSRange range = [exp rangeOfFirstMatchInString:self options:0 range:[self cui_fullRange]];
         
         if (range.location != NSNotFound) {
             return [self substringWithRange:range];
@@ -76,7 +76,7 @@
             exp = [[NSRegularExpression alloc] initWithPattern:pattern options:0 error:nil];
         }
         
-        return [exp stringByReplacingMatchesInString:self options:0 range:[self ner_fullRange] withTemplate:template];
+        return [exp stringByReplacingMatchesInString:self options:0 range:[self cui_fullRange] withTemplate:template];
     };
 }
 

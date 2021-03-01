@@ -142,7 +142,7 @@ CUI_CONSTRAINT_PROP(Object)     identifier;
  * Use to suppress getter side effects warning. Optional.
  * Usages: make.left.top.equal.view(view).left.bottom.End();
  */
-- (void(^)())End;
+- (void(^)(void))End;
 
 
 /**
@@ -153,9 +153,9 @@ CUI_CONSTRAINT_PROP(Object)     identifier;
     .width.constants(20).update();
     .width.equal.superview.remake();
  */
-- (NSArray *(^)())make;                     //create constraints and activate.
-- (NSArray *(^)())remake;                   //deactivate previous constraints and create new constraints.
-- (NSArray *(^)())update;                   //update previous constraints and create new constraints if needed.
+- (NSArray *(^)(void))make;                     //create constraints and activate.
+- (NSArray *(^)(void))remake;                   //deactivate previous constraints and create new constraints.
+- (NSArray *(^)(void))update;                   //update previous constraints and create new constraints if needed.
 
 @end
 

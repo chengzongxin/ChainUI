@@ -14,7 +14,7 @@
  * Items can be NSStrings or UIImages.
  * Usages: Segmented(@"Item1", @"Item2", Img(@"cat"))
  */
-#define Segmented(...)  [UISegmentedControl ner_segmentedControlWithItems:@[__VA_ARGS__]]
+#define Segmented(...)  [UISegmentedControl cui_segmentedControlWithItems:@[__VA_ARGS__]]
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -16,47 +16,47 @@
 @implementation NSMutableAttributedString (Chainable)
 
 - (CUIChainableNSMutableAttributedStringObjectBlock)fnt {
-    CUI_OBJECT_BLOCK([self ner_applyAttribute:NSFontAttributeName withValue:Fnt(value)]);
+    CUI_OBJECT_BLOCK([self cui_applyAttribute:NSFontAttributeName withValue:Fnt(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringObjectBlock)color {
-    CUI_OBJECT_BLOCK([self ner_applyAttribute:NSForegroundColorAttributeName withValue:Color(value)]);
+    CUI_OBJECT_BLOCK([self cui_applyAttribute:NSForegroundColorAttributeName withValue:Color(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringObjectBlock)bgColor {
-    CUI_OBJECT_BLOCK([self ner_applyAttribute:NSBackgroundColorAttributeName withValue:Color(value)]);
+    CUI_OBJECT_BLOCK([self cui_applyAttribute:NSBackgroundColorAttributeName withValue:Color(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringObjectBlock)systemLink {
-    CUI_OBJECT_BLOCK([self ner_applyAttribute:NSLinkAttributeName withValue:value]);
+    CUI_OBJECT_BLOCK([self cui_applyAttribute:NSLinkAttributeName withValue:value]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)kern {
-    CUI_FLOAT_BLOCK([self ner_applyAttribute:NSKernAttributeName withValue:@(value)]);
+    CUI_FLOAT_BLOCK([self cui_applyAttribute:NSKernAttributeName withValue:@(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)stroke {
-    CUI_FLOAT_BLOCK([self ner_applyAttribute:NSStrokeWidthAttributeName withValue:@(value)]);
+    CUI_FLOAT_BLOCK([self cui_applyAttribute:NSStrokeWidthAttributeName withValue:@(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)oblique {
-    CUI_FLOAT_BLOCK([self ner_applyAttribute:NSObliquenessAttributeName withValue:@(value)]);
+    CUI_FLOAT_BLOCK([self cui_applyAttribute:NSObliquenessAttributeName withValue:@(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)expansion {
-    CUI_FLOAT_BLOCK([self ner_applyAttribute:NSExpansionAttributeName withValue:@(value)]);
+    CUI_FLOAT_BLOCK([self cui_applyAttribute:NSExpansionAttributeName withValue:@(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)baselineOffset {
-    CUI_FLOAT_BLOCK([self ner_applyAttribute:NSBaselineOffsetAttributeName withValue:@(value)]);
+    CUI_FLOAT_BLOCK([self cui_applyAttribute:NSBaselineOffsetAttributeName withValue:@(value)]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)indent {
-    CUI_FLOAT_BLOCK([self ner_setParagraphStyleValue:@(value) forKey:@"firstLineHeadIndent"]);
+    CUI_FLOAT_BLOCK([self cui_setParagraphStyleValue:@(value) forKey:@"firstLineHeadIndent"]);
 }
 
 - (CUIChainableNSMutableAttributedStringFloatBlock)lineGap {
-    CUI_FLOAT_BLOCK([self ner_setParagraphStyleValue:@(value) forKey:@"lineSpacing"]);
+    CUI_FLOAT_BLOCK([self cui_setParagraphStyleValue:@(value) forKey:@"lineSpacing"]);
 }
 
 - (CUIChainableNSMutableAttributedStringObjectBlock)match {
@@ -72,7 +72,7 @@
                          exp = [[NSRegularExpression alloc] initWithPattern:value options:0 error:nil];
                      }
                      
-                     NSArray *matches = [exp matchesInString:self.string options:0 range:[self.string ner_fullRange]];
+                     NSArray *matches = [exp matchesInString:self.string options:0 range:[self.string cui_fullRange]];
                      for (NSTextCheckingResult *result in matches) {
                          [self.nerEffectedRanges addIndexesInRange:result.range];
                      }
@@ -100,17 +100,17 @@
 }
 
 - (instancetype)underline {
-    [self ner_applyAttribute:NSUnderlineStyleAttributeName withValue:@(NSUnderlineStyleSingle)];
+    [self cui_applyAttribute:NSUnderlineStyleAttributeName withValue:@(NSUnderlineStyleSingle)];
     return self;
 }
 
 - (instancetype)strikeThrough {
-    [self ner_applyAttribute:NSStrikethroughStyleAttributeName withValue:@(NSUnderlineStyleSingle)];
+    [self cui_applyAttribute:NSStrikethroughStyleAttributeName withValue:@(NSUnderlineStyleSingle)];
     return self;
 }
 
 - (instancetype)letterpress {
-    [self ner_applyAttribute:NSTextEffectAttributeName withValue:NSTextEffectLetterpressStyle];
+    [self cui_applyAttribute:NSTextEffectAttributeName withValue:NSTextEffectLetterpressStyle];
     return self;
 }
 
@@ -132,7 +132,7 @@
 }
 
 - (instancetype)linkForLabel {
-    [self ner_applyAttribute:CUILinkAttributeName withValue:CUILinkAttributeValue];
+    [self cui_applyAttribute:CUILinkAttributeName withValue:CUILinkAttributeValue];
     return self;
 }
 
@@ -142,22 +142,22 @@
 }
 
 - (instancetype)leftAlignment {
-    [self ner_setParagraphStyleValue:@(NSTextAlignmentLeft) forKey:@"alignment"];
+    [self cui_setParagraphStyleValue:@(NSTextAlignmentLeft) forKey:@"alignment"];
     return self;
 }
 
 - (instancetype)centerAlignment {
-    [self ner_setParagraphStyleValue:@(NSTextAlignmentCenter) forKey:@"alignment"];
+    [self cui_setParagraphStyleValue:@(NSTextAlignmentCenter) forKey:@"alignment"];
     return self;
 }
 
 - (instancetype)rightAlignment {
-    [self ner_setParagraphStyleValue:@(NSTextAlignmentRight) forKey:@"alignment"];
+    [self cui_setParagraphStyleValue:@(NSTextAlignmentRight) forKey:@"alignment"];
     return self;
 }
 
 - (instancetype)justifiedAlignment {
-    [self ner_setParagraphStyleValue:@(NSTextAlignmentJustified) forKey:@"alignment"];
+    [self cui_setParagraphStyleValue:@(NSTextAlignmentJustified) forKey:@"alignment"];
     return self;
 }
 

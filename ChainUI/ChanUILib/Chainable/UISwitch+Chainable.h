@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "CUIDefs.h"
 
-#define Switch  [UISwitch ner_littleHigherHuggingAndResistanceView]
+#define Switch  [UISwitch cui_littleHigherHuggingAndResistanceView]
 
 NS_ASSUME_NONNULL_BEGIN
 

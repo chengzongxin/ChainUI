@@ -17,7 +17,7 @@
     XYWH(XY(10, 10), 50, 50)
     XYWH(10, 10, WH(50, 50))
  */
-#define XYWH(...)               ((NERRect){__VA_ARGS__}).value
+#define XYWH(...)               ((CUIRect){__VA_ARGS__}).value
 
 #define Range(s, l)             NSMakeRange(s, l)
 
@@ -28,7 +28,7 @@
     Insets(10, 20, 30)          //{10, 20, 30, 20}
     Insets(10, 20, 30, 40)      //{10, 20, 30, 40}
  */
-#define Insets(...)             NER_NORMALIZE_INSETS(__VA_ARGS__)
+#define Insets(...)             CUI_NORMALIZE_INSETS(__VA_ARGS__)
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define Screen  [UIScreen mainScreen]
 
-@interface UIScreen (NERFrame)
+@interface UIScreen (CUIFrame)
 
 @property (nonatomic, readonly) CGFloat width;
 @property (nonatomic, readonly) CGFloat height;

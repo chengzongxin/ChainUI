@@ -26,6 +26,6 @@
 }
 
 - (CUIChainableUIVisualEffectViewObjectBlock)addVibrancyChild {
-    CUI_OBJECT_BLOCK([self ner_addVibrancyChild:value]);
+    CUI_OBJECT_BLOCK([self cui_addVibrancyChild:value]);
 }
 @end

@@ -9,7 +9,7 @@
 #import "CUIDefs.h"
 #import "CUIPrivates.h"
 
-#define ImageView   [UIImageView ner_littleHigherHuggingAndResistanceView]
+#define ImageView   [UIImageView cui_littleHigherHuggingAndResistanceView]
 
 NS_ASSUME_NONNULL_BEGIN
 
