@@ -6,6 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CUIDefs.h"
+#import "UIView+CUIFrame.h"
+#import "CUIStack.h"
+#import "CUIStaticTableView.h"
 
 
 #define View    [UIView new]
@@ -110,6 +114,13 @@ CUI_PROP(v, Object)             addTo;\
  * Usages: addChild(subview), addChild(subview1, subview2, subview3, ...)
  */\
 CUI_PROP(v, Object)             addChild;
+
+
+#define border(...)             border(__VA_ARGS__, nil)
+#define shadow(...)             shadow(CUI_MAKE_FLOAT_LIST(__VA_ARGS__))
+#define touchInsets(...)        touchInsets(CUI_NORMALIZE_INSETS(__VA_ARGS__))
+#define addChild(...)           addChild(@[__VA_ARGS__])
+
 
 
 typedef id(^CUIcallback)(id,id);
@@ -445,13 +456,13 @@ CUI_ALL_VIEW_PROPS(UISegmentedControl)
 CUI_ALL_VIEW_PROPS(UIVisualEffectView)
 @end
 
-//@interface CUIStack (UIView_CUIdyUI)
-//CUI_ALL_VIEW_PROPS(CUIStack);
-//@end
-//
-//@interface CUIStaticTableView (UIView_CUIdyUI)
-//CUI_ALL_VIEW_PROPS(CUIStaticTableView);
-//@end
+@interface CUIStack (UIView_CUIdyUI)
+CUI_ALL_VIEW_PROPS(CUIStack);
+@end
+
+@interface CUIStaticTableView (UIView_CUIdyUI)
+CUI_ALL_VIEW_PROPS(CUIStaticTableView);
+@end
 
 
 #define fnt(x)          fnt(CUI_CONVERT_VALUE_TO_STRING(x))

@@ -41,7 +41,7 @@ CUI_LABEL_PROP(Object)      fnt;
  * Usages: .color(@"red"), .color(@"#F00"), .color(@"255,0,0"), .color(colorObject), etc.
  * See UIColor+CUIChainable.h for more information.
  */
-CUI_LABEL_PROP(Object)      color;
+CUI_LABEL_PROP(Object)      txtColor;
 
 /**
  * highlightedTextColor

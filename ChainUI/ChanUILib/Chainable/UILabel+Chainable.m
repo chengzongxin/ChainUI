@@ -22,7 +22,7 @@
     CUI_OBJECT_BLOCK(self.font = Fnt(value));
 }
 
-- (CUIChainableUILabelObjectBlock)color {
+- (CUIChainableUILabelObjectBlock)txtColor {
     CUI_OBJECT_BLOCK(self.textColor = Color(value));
 }
 

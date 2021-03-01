@@ -6,6 +6,9 @@
 //
 
 #import "UIView+Chainable.h"
+#import "UIColor+Chainable.h"
+#import "CUIConstraint+Chainable.h"
+#import "CUIUtils.h"
 #import "CUIPrivates.h"
 
 @implementation UIView (Chainable)
@@ -266,5 +269,99 @@
 
 @end
 
+
+
+
+@implementation UIView (CUIChainable_Autolayout)
+
+- (CUIChainableUIViewFloatBlock)horHugging {
+    CUI_FLOAT_BLOCK([self setContentHuggingPriority:value forAxis:UILayoutConstraintAxisHorizontal]);
+}
+
+- (CUIChainableUIViewFloatBlock)verHugging {
+    CUI_FLOAT_BLOCK([self setContentHuggingPriority:value forAxis:UILayoutConstraintAxisVertical]);
+}
+
+- (CUIChainableUIViewFloatBlock)horResistance {
+    CUI_FLOAT_BLOCK([self setContentCompressionResistancePriority:value forAxis:UILayoutConstraintAxisHorizontal]);
+}
+
+- (CUIChainableUIViewFloatBlock)verResistance {
+    CUI_FLOAT_BLOCK([self setContentCompressionResistancePriority:value forAxis:UILayoutConstraintAxisVertical]);
+}
+
+- (CUIChainableUIViewFloatBlock)fixWidth {
+    CUI_FLOAT_BLOCK(Constraint(self).width.constants(value).priority(950).update());
+}
+
+- (CUIChainableUIViewFloatBlock)fixHeight {
+    CUI_FLOAT_BLOCK(Constraint(self).height.constants(value).priority(950).update());
+}
+
+- (CUIChainableUIViewSizeBlock)fixWH {
+    CUI_SIZE_BLOCK(Constraint(self).size.constants(value.value.width, value.value.height).priority(950).update());
+}
+
+- (CUIChainableUIViewEmbedBlock)embedIn {
+    return ^(UIView *superview, UIEdgeInsets insets) {
+        if ([superview isKindOfClass:UIVisualEffectView.class]) {
+            superview = ((UIVisualEffectView *)superview).contentView;
+        }
+        
+        [superview addSubview:self];
+        
+        if (insets.top != CUINull) {
+            Constraint(self).top.constants(insets.top).priority(950).update();
+        }
+        
+        if (insets.left != CUINull) {
+            Constraint(self).left.constants(insets.left).priority(950).update();
+        }
+        
+        if (insets.bottom != CUINull) {
+            Constraint(self).bottom.constants(-insets.bottom).priority(950).update();
+        }
+        
+        if (insets.right != CUINull) {
+            Constraint(self).right.constants(-insets.right).priority(950).update();
+        }
+        
+        return self;
+    };
+}
+
+- (instancetype)lowHugging {
+    return self.horHugging(100).verHugging(100);
+}
+
+- (instancetype)highHugging {
+    return self.horHugging(900).verHugging(900);
+}
+
+- (instancetype)lowResistance {
+    return self.horResistance(100).verResistance(100);
+}
+
+- (instancetype)highResistance {
+    return self.horResistance(900).verResistance(900);
+}
+
+
+#define SYNTHESIZE_CONSTRIANTS_PROP(x, y) \
+- (CUIChainableUIViewObjectBlock)x {\
+    CUI_OBJECT_BLOCK(\
+                     if (CUI_IS_BLOCK(value)) {\
+                         CUIConstraintMaker *make = [[CUIConstraintMaker alloc] initWithFirstItem:self];\
+                         ((CUIObjectBlock)value)(make);\
+                         [make y:nil];\
+                     }\
+    );\
+}
+
+SYNTHESIZE_CONSTRIANTS_PROP(makeCons, makeConstraints);
+SYNTHESIZE_CONSTRIANTS_PROP(remakeCons, remakeConstraints);
+SYNTHESIZE_CONSTRIANTS_PROP(updateCons, updateConstraints);
+
+@end
 
 

@@ -49,6 +49,13 @@ typedef void (^CUIObjectBlock)(id);
 
 #define Exp(x)              ({x;})
 
+@class CUIConstraint;
+@class CUIAlert;
+@class CUIStack;
+@class CUIStyle;
+@class CUIStaticRow;
+@class CUIStaticSection;
+@class CUIStaticTableView;
 
 /*
  Chainable properties
@@ -75,7 +82,7 @@ typedef void (^CUIObjectBlock)(id);
 #define CUI_STRING_PROP(y)          CUI_PROP(NSString, y)
 #define CUI_ATT_PROP(y)             CUI_PROP(NSMutableAttributedString, y)
 #define CUI_CONSTRAINT_PROP(y)      CUI_PROP(CUIConstraint, y)
-#define CUI_ALERT_PROP(y)           CUI_PROP(CUIAlertMaker, y)
+#define CUI_ALERT_PROP(y)           CUI_PROP(CUIAlert, y)
 #define CUI_STACK_PROP(y)           CUI_PROP(CUIStack, y)
 #define CUI_STYLE_PROP(y)           CUI_PROP(CUIStyle, y)
 #define CUI_STATIC_PROP(y)          CUI_PROP(CUIStaticTableView, y)
@@ -125,13 +132,13 @@ CUI_GECUIATE_CHAINABLE_TYPES(UIImage);
 CUI_GECUIATE_CHAINABLE_TYPES(UIColor);
 CUI_GECUIATE_CHAINABLE_TYPES(NSString);
 CUI_GECUIATE_CHAINABLE_TYPES(NSMutableAttributedString);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIConstraint);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIAlertMaker);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIStack);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIStyle);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIStaticTableView);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIStaticRow);
-//CUI_GECUIATE_CHAINABLE_TYPES(CUIStaticSection);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIConstraint);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIAlert);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIStack);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIStyle);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIStaticTableView);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIStaticRow);
+CUI_GECUIATE_CHAINABLE_TYPES(CUIStaticSection);
 
 
 #define CUI_CHAINABLE_BLOCK(x, ...) return ^(x value) {__VA_ARGS__; return self;}
