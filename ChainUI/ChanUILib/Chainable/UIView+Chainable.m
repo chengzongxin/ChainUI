@@ -358,6 +358,18 @@
     );\
 }
 
+//- (CUIChainableUIViewObjectBlock)makeCons {
+//    CUI_OBJECT_BLOCK(
+//                     if (CUI_IS_BLOCK(value)) {
+//        NSLog(@"11111");
+//                         CUIConstraintMaker *make = [[CUIConstraintMaker alloc] initWithFirstItem:self];
+//                         ((CUIObjectBlock)value)(make);
+//                         [make makeConstraints:nil];
+//                     }
+//    );
+//}
+//
+
 SYNTHESIZE_CONSTRIANTS_PROP(makeCons, makeConstraints);
 SYNTHESIZE_CONSTRIANTS_PROP(remakeCons, remakeConstraints);
 SYNTHESIZE_CONSTRIANTS_PROP(updateCons, updateConstraints);
