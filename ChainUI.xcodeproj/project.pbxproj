@@ -35,6 +35,7 @@
 		165D36EF25EA739F009E1E1C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 165D36EE25EA739F009E1E1C /* README.md */; };
 		165D36F425EA7475009E1E1C /* CUIBlockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 165D36F325EA7475009E1E1C /* CUIBlockInfo.m */; };
 		165D36F825EA77E9009E1E1C /* UILabel+CUILink.m in Sources */ = {isa = PBXBuildFile; fileRef = 165D36F725EA77E9009E1E1C /* UILabel+CUILink.m */; };
+		1673DBD425EE0FE1002F9C0D /* appList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1673DBD325EE0FE1002F9C0D /* appList.plist */; };
 		169A535625ECB75B0089152F /* CUIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 169A535525ECB75B0089152F /* CUIAlert.m */; };
 		169A535B25ECB7D70089152F /* CUIConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 169A535A25ECB7D70089152F /* CUIConstraint.m */; };
 		169A535F25ECB9550089152F /* CUIStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169A535E25ECB9550089152F /* CUIStaticTableView.m */; };
@@ -111,6 +112,7 @@
 		165D36F325EA7475009E1E1C /* CUIBlockInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUIBlockInfo.m; sourceTree = "<group>"; };
 		165D36F625EA77E9009E1E1C /* UILabel+CUILink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+CUILink.h"; sourceTree = "<group>"; };
 		165D36F725EA77E9009E1E1C /* UILabel+CUILink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CUILink.m"; sourceTree = "<group>"; };
+		1673DBD325EE0FE1002F9C0D /* appList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appList.plist; sourceTree = "<group>"; };
 		169A535425ECB75B0089152F /* CUIAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUIAlert.h; sourceTree = "<group>"; };
 		169A535525ECB75B0089152F /* CUIAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUIAlert.m; sourceTree = "<group>"; };
 		169A535925ECB7D70089152F /* CUIConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUIConstraint.h; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				169A538125ECC6520089152F /* AppStoreCell.m */,
 				169A538225ECC6520089152F /* AppStoreViewController.h */,
 				169A538325ECC6530089152F /* AppStoreViewController.m */,
+				1673DBD325EE0FE1002F9C0D /* appList.plist */,
 				165D36AA25EA6F08009E1E1C /* TestViewController.h */,
 				165D36AB25EA6F08009E1E1C /* TestViewController.m */,
 				163AFE4825E9E69100A4FD35 /* PrefixHeader.pch */,
@@ -362,6 +365,7 @@
 				16566DFC25E794AC00B79029 /* Assets.xcassets in Resources */,
 				165D36EF25EA739F009E1E1C /* README.md in Resources */,
 				16566DFA25E794AA00B79029 /* Main.storyboard in Resources */,
+				1673DBD425EE0FE1002F9C0D /* appList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
