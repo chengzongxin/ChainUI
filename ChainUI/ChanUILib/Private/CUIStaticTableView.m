@@ -31,6 +31,8 @@
 @interface CUIStaticSection ()
 @property (nonatomic, strong) NSArray *rows;
 
+@property (nonatomic, strong) id titleObject;
+
 @property (nonatomic, strong) id headerObject;
 @property (nonatomic, strong) id footerObject;
 
@@ -297,7 +299,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)index {
     CUIStaticSection *section = self.sections[index];
     
-    if([section.headerObject isKindOfClass:UIView.class]) {
+    if (section.titleObject) {
+        return 44;
+    }else if([section.headerObject isKindOfClass:UIView.class]) {
         UIView *headerView = section.headerObject;
         return headerView.bounds.size.height;
         
@@ -333,6 +337,10 @@
         }
     }
     
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [self.sections[section] titleObject];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)index {

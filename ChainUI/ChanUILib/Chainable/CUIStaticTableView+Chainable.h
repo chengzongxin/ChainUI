@@ -110,6 +110,8 @@ CUI_STATIC_PROP(Object)     styles;
 
 @interface CUIStaticSection (CUIChainable)
 
+
+CUI_SECTION_PROP(Object)    title;
 /**
  * Section header
  * Argument can be:

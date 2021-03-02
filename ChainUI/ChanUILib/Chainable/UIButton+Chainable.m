@@ -122,7 +122,8 @@
 
 - (instancetype)multiline {
     self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.titleLabel.textAlignment = NSTextAlignmentLeft;
+    self.titleLabel.numberOfLines = 0;
     return self;
 }
 

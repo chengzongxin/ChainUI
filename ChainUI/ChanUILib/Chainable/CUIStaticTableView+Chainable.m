@@ -94,6 +94,10 @@
 
 @implementation CUIStaticSection (CUIChainable)
 
+- (CUIChainableCUIStaticSectionObjectBlock)title{
+    CUI_OBJECT_BLOCK([self setValue:value forKey:@"titleObject"]);
+}
+
 - (CUIChainableCUIStaticSectionObjectBlock)header {
     CUI_OBJECT_BLOCK([self setValue:value forKey:@"headerObject"]);
 }

@@ -248,6 +248,7 @@ CUI_SYNTHESIZE(nerEffectedRanges, setNerEffectedRanges);
     }
     
     [mutableStyle setValue:value forKey:key];
+    mutableStyle.firstLineHeadIndent = 0.0;//首行缩进
     [self addAttribute:NSParagraphStyleAttributeName value:mutableStyle range:range];
     
     if ([key isEqualToString:@"lineSpacing"]) {

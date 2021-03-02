@@ -123,13 +123,13 @@
                     })).onClick(^{
                         Log(@"Row5");
                     })
-                    ),
+                    ).title(@"123"),
             
             Section(
                     Row.str(@"Option1").check(YES),
                     Row.str(@"Option2"),
                     Row.str(@"Option3"),
-                    ).singleCheck,
+                    ).singleCheck.title(@"456"),
             
             Section(
                     Row.custom(^(id contentView) {
