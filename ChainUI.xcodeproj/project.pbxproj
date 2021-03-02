@@ -160,7 +160,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		163AFE4B25E9E70000A4FD35 /* ChanUILib */ = {
+		163AFE4B25E9E70000A4FD35 /* ChanUI */ = {
 			isa = PBXGroup;
 			children = (
 				163AFE4D25E9E70000A4FD35 /* ChainUI.h */,
@@ -169,7 +169,7 @@
 				16FD666525EA28DB0044E614 /* Public */,
 				16FD666325EA271C0044E614 /* Chainable */,
 			);
-			path = ChanUILib;
+			path = ChanUI;
 			sourceTree = "<group>";
 		};
 		16566DE325E794AA00B79029 = {
@@ -191,7 +191,7 @@
 		16566DEE25E794AA00B79029 /* ChainUI */ = {
 			isa = PBXGroup;
 			children = (
-				163AFE4B25E9E70000A4FD35 /* ChanUILib */,
+				163AFE4B25E9E70000A4FD35 /* ChanUI */,
 				16566DEF25E794AA00B79029 /* AppDelegate.h */,
 				16566DF025E794AA00B79029 /* AppDelegate.m */,
 				16566DF225E794AA00B79029 /* SceneDelegate.h */,
