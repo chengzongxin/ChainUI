@@ -30,7 +30,25 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ChainUI/Classes/**/*'
+#  s.source_files = 'ChainUI/Classes/**/*'
+  
+  s.public_header_files = 'ChainUI/Classes/ChainUI/*.h'
+  s.source_files = 'ChainUI/Classes/ChainUI/*.{h,m}'
+  s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
+  s.subspec 'Private' do |ss|
+    ss.source_files = 'ChainUI/Classes/Private/*.{h,m}'
+    ss.public_header_files = "ChainUI/Classes/Private/*.h"
+  end
+  s.subspec 'Public' do |ss|
+    ss.source_files = 'ChainUI/Classes/Public/*.{h,m}'
+    ss.public_header_files = "ChainUI/Classes/Public/*.h"
+    ss.dependency 'ChainUI/Private'
+  end
+  s.subspec 'Chainable' do |ss|
+    ss.source_files = 'ChainUI/Classes/Chainable/*.{h,m}'
+    ss.dependency 'ChainUI/Public'
+    ss.dependency 'ChainUI/Private'
+  end
   
   # s.resource_bundles = {
   #   'ChainUI' => ['ChainUI/Assets/*.png']

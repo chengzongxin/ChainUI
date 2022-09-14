@@ -1,0 +1,25 @@
+PODS:
+  - ChainUI (0.1.0):
+    - ChainUI/Chainable (= 0.1.0)
+    - ChainUI/Private (= 0.1.0)
+    - ChainUI/Public (= 0.1.0)
+  - ChainUI/Chainable (0.1.0):
+    - ChainUI/Private
+    - ChainUI/Public
+  - ChainUI/Private (0.1.0)
+  - ChainUI/Public (0.1.0):
+    - ChainUI/Private
+
+DEPENDENCIES:
+  - ChainUI (from `../`)
+
+EXTERNAL SOURCES:
+  ChainUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChainUI: 37c4d55da56df3ff4244f3058e8b5f6cddc03611
+
+PODFILE CHECKSUM: 8e7cc5998c98e490f4ffa646c51679899bc46a1b
+
+COCOAPODS: 1.10.0

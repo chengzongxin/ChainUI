@@ -1,0 +1,1080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A9C6DFCAC0ED96BD549912F2E7828A /* UISlider+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8AE676E22D412143501A75CA565F78 /* UISlider+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D2492DE9BB9B5F79E6CF1000C7A7B4 /* NSString+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B56DC31C2D80289725CAC9FDE65F3B /* NSString+Chainable.m */; };
+		0AF66163E0EFD6C50F12C0D48159554E /* UILabel+CUILink.m in Sources */ = {isa = PBXBuildFile; fileRef = 23409EDC1CBE59ED3744CA709F03DB14 /* UILabel+CUILink.m */; };
+		0DE2D95C05A21D887653691C72103B7F /* CUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 027E053975734B998CF32EC846BDF6CD /* CUIStyle.m */; };
+		0DEDB0AB729B25AD84573199E8060CDE /* CUIBlockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 25125B92EDFCA6F4B3B069B1DFB35C15 /* CUIBlockInfo.m */; };
+		1378509BEFF28EE8799AF3A2E2683D86 /* CUIConstraint+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A16701862EDD50ABD9494DA59E26533 /* CUIConstraint+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BA9394335C54F0D6A114DA9095B240 /* UITextField+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = AE811BAB4A13E1FB909D386DED8EF0B3 /* UITextField+Chainable.m */; };
+		18D0D6D6FBDD71D3290CAEEC6B1781E9 /* UIView+CUIFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 063C22B013AC35A1440511989EB9058D /* UIView+CUIFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22A1BAE05702C0021C5905CFE59D05FE /* Pods-ChainUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33071EF17F628EF1A3E63692A4B3F881 /* Pods-ChainUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239053FF4B04122A86A09BA1E1FBB045 /* NSAttributedString+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EE19E75BC3BD37376C0FD2EB4646 /* NSAttributedString+Chainable.m */; };
+		2409824946B02584C5CB736F361A07FF /* Pods-ChainUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6CFF04249A4D52FBDC4029264C46F /* Pods-ChainUI_Tests-dummy.m */; };
+		2883171485541BB1BAC9A34EDE1096EC /* UISwitch+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = AB804112FE97E89318F55596796FD541 /* UISwitch+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EF49DC9B6844A39C7CBFBAD448DEB7C /* UIImageView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122D5BE8B89E35B22BA1C0F94257885 /* UIImageView+Chainable.m */; };
+		3147E4E46A959CCEB2842A1E4E26C766 /* CUIStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A24CEC2CC2598C5213B07B1E93529A3 /* CUIStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32045A7E540F4C24B8A07B9466BC5CB7 /* CUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C60D88CDFFA76EE3C2A52701319FCD /* CUIUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F4E1EC82AD0CC9FBFBA0CA227FBB442 /* UILabel+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE500053909C8091A304B9A34C0513 /* UILabel+Chainable.m */; };
+		41BBD477A63302CEEB824FEB33E661ED /* CUITypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEECA763970BFED73442C27B7DDED2D /* CUITypeConverter.m */; };
+		47A420D7D88E0225CA0C80E28A79988D /* UIVisualEffectView+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = B73122235721173B5884DB3117935BE3 /* UIVisualEffectView+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48250ADE6B58B2E8E2A4C92279172188 /* CUIAlert+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1569D5777DE59F73DE0B145A53BB3F2D /* CUIAlert+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D5E1376721B6B94957019E4A7509C1E /* UITextView+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE63C97DF6C2C3BE910418F189AA2C5 /* UITextView+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F6571AAAD246F8FA31903DCE62AAE45 /* UIStepper+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E2EB3AE684F38193E74CA6B30E38BF /* UIStepper+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F68B69F586C2EA3D34B3C08062FE788 /* NSArray+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4A413C854B16FD0630FCE07CEA1E7B /* NSArray+Chainable.m */; };
+		5568BFF952192A5F0F2A75C4142E976E /* CUIStack+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = D037667F0B998348AC5CC8DA06CC0BAC /* CUIStack+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		557934932926F956BA53A5B2E3B8849F /* UIButton+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCA58198B4AC6AEF20C4FDCE24F5EC3 /* UIButton+Chainable.m */; };
+		58102B53972658C7B1219F2EC72E2883 /* CUIStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FF775F369A3214366C036BA37ED3F5 /* CUIStack.m */; };
+		5AA43C36A71B1091E81F112C08D80182 /* UIPageControl+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1B9FB44BF3ABB3837FCA9145A50F5 /* UIPageControl+Chainable.m */; };
+		5DAC5791381FD11EB322EB68EA7F8E2A /* CUIStaticTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EC5252E07EC241277F21708EA8908E /* CUIStaticTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6010A95EA7B7E119195EB77518A170C1 /* UILabel+CUILink.h in Headers */ = {isa = PBXBuildFile; fileRef = 058CD4C9C03DAB83A2B81BB0408ADA11 /* UILabel+CUILink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61C5EA0CD30527774BA4D280B22988C1 /* CUIStyle+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 126F4404D551FECF031A03C631604DE7 /* CUIStyle+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62A045980EDC95F686983E3A4A2FEA93 /* UILabel+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = AB82019585B6566C3A0BC7C10F7A7163 /* UILabel+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64BCEEAC13E8FECA2E4232A1E0E96A32 /* UIPageControl+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = A05270A1956345BD6F7F01066EC6B03B /* UIPageControl+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E102EFEDA73D1B55916ACCFE2293D6 /* CUIPrivates.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDA97FE696D3AA6EBFA91F55C5D80C7 /* CUIPrivates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		688E5F99910F5C100803DA9DF51D1BB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0BCC50A12B61F847D207DBB8CFF0AF /* Foundation.framework */; };
+		68B21D3D04D66C0DE553F9F1B4A82478 /* NSString+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5FF62B843E247A791E081739199D86 /* NSString+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BB4B567EA12CF8FE11330A1883833FD /* CUIStack+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF0D276B5597CE807575F9E03103C6 /* CUIStack+Chainable.m */; };
+		6D92B95C065C64227D77F3070D016E0B /* CUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B8D9BDF744F71E32A1506F4E1B5BA /* CUIUtils.m */; };
+		6F162D9271696B07DA6F5452C01FFF76 /* CUIBlockInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC1A3176842F3961DC544AB079AE072 /* CUIBlockInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F773BE9A946EE1994908F9945544B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0BCC50A12B61F847D207DBB8CFF0AF /* Foundation.framework */; };
+		76DF1DDDDE8F4E4DD86927BAF69FA6FE /* NSAttributedString+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 606EF68DBC67E4A0E74151104A23BBE9 /* NSAttributedString+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CD54985A125BF1986A07DBD83FE0871 /* ChainUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E46D6071EB9B82C0D87B4AA834CC63 /* ChainUI-dummy.m */; };
+		7D8CE8CA5B444A4033016732D1C10ED6 /* CUIDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9050C10468BE1E9E85A35AB555F354 /* CUIDefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		809DCAE718B7DEC21DFB4E8397689E3B /* CUIConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E34377B52F6B52F9ADCCCA7394A81 /* CUIConstraint.m */; };
+		884DEE1C6F2AAC258743F5A308AFAD29 /* UIColor+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = B48C38841CD9C0E653B4B83DAC2F87AE /* UIColor+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89A8EB9B50C5DF169CD648E641A883E7 /* CUITypeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 590E33DB1CA998DDDBABF63A43E18CA2 /* CUITypeConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89D6EC0A589B3A4C0BDD93C8AAA78453 /* UIImageView+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 39186FB584B7C53111C2FB2D826E9BAE /* UIImageView+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961792AA0C9081EA9A109779AA09679E /* UISegmentedControl+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EA3C647E3B2AD7BA0DACD04481D20C /* UISegmentedControl+Chainable.m */; };
+		999628DF86CFE1095308C7E8E824855F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F02396820467C46BFBDBFD5A82BB7 /* CoreGraphics.framework */; };
+		9CC3FE22DE7D2302526B2A955BB1131D /* CUIStyle+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = C356F0D5EA3FE34628FB3941BD0BA90E /* CUIStyle+Chainable.m */; };
+		9D1D9F8B2CFB790A4F6D9154C3D991E8 /* CUIStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = D6380EEABC2EF4FB51C6EF9EB0743B6B /* CUIStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5B46B31C7CACAC1BFA8C443AB15357D /* CUIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7018FE6153C235E83E1DBBC842C4C055 /* CUIAlert.m */; };
+		B4DCB6F1B89A4D06E62CC8E484A3F9A2 /* CUIStaticTableView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = C83CB1F60ECB6EECE4898F528D011FE3 /* CUIStaticTableView+Chainable.m */; };
+		B7ACD108ED98427E230C931097C5E660 /* UIButton+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = AF77E014AA3ACC5C094A1D92E8F3F165 /* UIButton+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE3FB9E1C811310F272002892437D1E0 /* UIImage+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = A5636A8C1086894DB03684F777540680 /* UIImage+Chainable.m */; };
+		C262442BF2F956D86B3B796182D39769 /* UIView+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = A14C56D6D9287B2A9AA0EC68D13C4E78 /* UIView+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C47A7FFACFE8CF0CECB42490FC18934F /* CUIStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E289975B56935D211799B6CCFC0A0F73 /* CUIStaticTableView.m */; };
+		C74731ED0ED65585618B9AD7F6EA46C4 /* CUIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = D238F4C962B69D695D8B0F4D74064929 /* CUIAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C760CCBB712F407126E184560089A930 /* UIVisualEffectView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B58582D5759E8036FF20048F4032D /* UIVisualEffectView+Chainable.m */; };
+		C780015F5793C4158471B28AC18198B0 /* UIImage+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E01640A37DB6022731F40F670DB59F /* UIImage+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C984A1EFD3FDA94241EB94D94775683D /* NSArray+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 847070CF8EB44F7BA57189E2776374EF /* NSArray+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDDF9E2EC79555D45212378978B0F425 /* UITextView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32604FA9FBCFC22B59730FD7971C3A94 /* UITextView+Chainable.m */; };
+		CE58CA1F1EE3A25A87E2D24828089093 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAC17E35C4C855B7DD30B7CFD8A28A0 /* UIKit.framework */; };
+		CF1375FFE6B404BEFF8CFF11D4374212 /* UISlider+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3EF9A1AF6CFD4111D3AFF0F76319B /* UISlider+Chainable.m */; };
+		CF3BE045C482BC7593FC1B9333CA6F9F /* CUIConstraint+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 857B8F76874BA7565FEF0FED8AF466D6 /* CUIConstraint+Chainable.m */; };
+		D18446B94C46F6D51F3F7CEB1CE508CD /* CUIConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0140BCE9CC2B06E8257A039142649A9D /* CUIConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D234ADCC756CE45C6A4E4E0ACB51A55D /* UIColor+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = A9286E212FFAA85FB8CEA40E0282685E /* UIColor+Chainable.m */; };
+		D2D3F1D37A5F12A041DA9A45651E64C6 /* CUIAlert+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8C9A9D6B54C72F6AE8B444FE0B5FA9 /* CUIAlert+Chainable.m */; };
+		D5CEED4B471A2288D00BA8CA65186BF3 /* Pods-ChainUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0A795BC4FFA0C72D7DCDB5FC3D6CB /* Pods-ChainUI_Example-dummy.m */; };
+		D7AFF512A40AD19D7867AC5AF75CFDBC /* UISwitch+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 59864BF9BEA7D5C93590DDB6A2873158 /* UISwitch+Chainable.m */; };
+		E14B1D9F76153B30D8F72AE5D5E1DCD2 /* UIView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 866483F9DF4F9271EB66804DB0C5A5D4 /* UIView+Chainable.m */; };
+		E3BCC3C89F4D423246D57476A6D8F98E /* CUIStaticTableView+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = F5037AA67F9B96C32538F4C1F5B1CDB4 /* CUIStaticTableView+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E421EB6EC50AE6C2A2D4B6EFE967C2CB /* UIFont+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 065754483DC9BC6C25E24646EBE9BD6D /* UIFont+Chainable.m */; };
+		E507A22D484684E7DA8F9C55CF6BDCD2 /* UIFont+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4669247E89B99837BCFF8269FFAAA0 /* UIFont+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E75BACC213D4F24EEA2C2E4E6CECB967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0BCC50A12B61F847D207DBB8CFF0AF /* Foundation.framework */; };
+		EC0AF99F0E72A9FC4E13FCCAC961A0FB /* ChainUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1229F46A4CA64F090AE040715057B6 /* ChainUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD7FF5143AC3ED5DF9355889657C33E /* CUIPrivates.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5EF6BA0BF8402B0293A770D8FC1B96 /* CUIPrivates.m */; };
+		F2E3FA54E4D7AA766A8B6E23626DE347 /* UISegmentedControl+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C2C3BFEC8AF8CF92D92B1B059FBD1D /* UISegmentedControl+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3CA9EB24694794246D6B86A1196CE5E /* UITextField+Chainable.h in Headers */ = {isa = PBXBuildFile; fileRef = 896DFD421BFD55A098C936528E28A738 /* UITextField+Chainable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F60DD4980D674B4000ABF733D736D917 /* UIView+CUIFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B5ED4B04B9F4E8A837B42E57C1B8F /* UIView+CUIFrame.m */; };
+		F691651AD8CEC23686CB4EBF20170EF7 /* UIStepper+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = FE216F3DED21B34EFD31802FC58D6D91 /* UIStepper+Chainable.m */; };
+		FD8AA180C3A975FAD2B6CEFEA5502D7C /* Pods-ChainUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F6B4B86F16611E2E244BE21827A8E2E /* Pods-ChainUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		777D0D335A55EF363B7360C72F361433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC32AC655ABC31E7C96614A10DC354A;
+			remoteInfo = "Pods-ChainUI_Example";
+		};
+		AF21AC3D55C22BAE35704E4B4E6F4852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E54EF6B12369109E29D224B56EC2498D;
+			remoteInfo = ChainUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DF0D276B5597CE807575F9E03103C6 /* CUIStack+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CUIStack+Chainable.m"; path = "ChainUI/Classes/Chainable/CUIStack+Chainable.m"; sourceTree = "<group>"; };
+		0140BCE9CC2B06E8257A039142649A9D /* CUIConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIConstraint.h; path = ChainUI/Classes/Private/CUIConstraint.h; sourceTree = "<group>"; };
+		027E053975734B998CF32EC846BDF6CD /* CUIStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIStyle.m; path = ChainUI/Classes/Private/CUIStyle.m; sourceTree = "<group>"; };
+		054C22225A91619C836C38EB246AB48A /* Pods_ChainUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChainUI_Example.framework; path = "Pods-ChainUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		058CD4C9C03DAB83A2B81BB0408ADA11 /* UILabel+CUILink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+CUILink.h"; path = "ChainUI/Classes/Public/UILabel+CUILink.h"; sourceTree = "<group>"; };
+		063C22B013AC35A1440511989EB9058D /* UIView+CUIFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CUIFrame.h"; path = "ChainUI/Classes/Public/UIView+CUIFrame.h"; sourceTree = "<group>"; };
+		065754483DC9BC6C25E24646EBE9BD6D /* UIFont+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Chainable.m"; path = "ChainUI/Classes/Chainable/UIFont+Chainable.m"; sourceTree = "<group>"; };
+		08829E6C54C2BE96CF662551BBD3737E /* Pods-ChainUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChainUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		08EC5252E07EC241277F21708EA8908E /* CUIStaticTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIStaticTableView.h; path = ChainUI/Classes/Private/CUIStaticTableView.h; sourceTree = "<group>"; };
+		0D2B8D9BDF744F71E32A1506F4E1B5BA /* CUIUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIUtils.m; path = ChainUI/Classes/Private/CUIUtils.m; sourceTree = "<group>"; };
+		1122D5BE8B89E35B22BA1C0F94257885 /* UIImageView+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Chainable.m"; path = "ChainUI/Classes/Chainable/UIImageView+Chainable.m"; sourceTree = "<group>"; };
+		126F4404D551FECF031A03C631604DE7 /* CUIStyle+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CUIStyle+Chainable.h"; path = "ChainUI/Classes/Chainable/CUIStyle+Chainable.h"; sourceTree = "<group>"; };
+		13923FCD43E3204D4E46F95D24D49758 /* Pods-ChainUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChainUI_Tests.modulemap"; sourceTree = "<group>"; };
+		1569D5777DE59F73DE0B145A53BB3F2D /* CUIAlert+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CUIAlert+Chainable.h"; path = "ChainUI/Classes/Chainable/CUIAlert+Chainable.h"; sourceTree = "<group>"; };
+		16C3EF9A1AF6CFD4111D3AFF0F76319B /* UISlider+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISlider+Chainable.m"; path = "ChainUI/Classes/Chainable/UISlider+Chainable.m"; sourceTree = "<group>"; };
+		1FB189482210D19F45DF30EFFF40DB15 /* Pods-ChainUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		23409EDC1CBE59ED3744CA709F03DB14 /* UILabel+CUILink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+CUILink.m"; path = "ChainUI/Classes/Public/UILabel+CUILink.m"; sourceTree = "<group>"; };
+		24EA3C647E3B2AD7BA0DACD04481D20C /* UISegmentedControl+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+Chainable.m"; path = "ChainUI/Classes/Chainable/UISegmentedControl+Chainable.m"; sourceTree = "<group>"; };
+		25125B92EDFCA6F4B3B069B1DFB35C15 /* CUIBlockInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIBlockInfo.m; path = ChainUI/Classes/Private/CUIBlockInfo.m; sourceTree = "<group>"; };
+		2693CDD4795001E01C3769B97FF81F6B /* Pods-ChainUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChainUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2CD6B61EE7B2AB3853F073FB17FDF626 /* ChainUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChainUI-Info.plist"; sourceTree = "<group>"; };
+		2F6B4B86F16611E2E244BE21827A8E2E /* Pods-ChainUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainUI_Tests-umbrella.h"; sourceTree = "<group>"; };
+		32604FA9FBCFC22B59730FD7971C3A94 /* UITextView+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Chainable.m"; path = "ChainUI/Classes/Chainable/UITextView+Chainable.m"; sourceTree = "<group>"; };
+		33071EF17F628EF1A3E63692A4B3F881 /* Pods-ChainUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainUI_Example-umbrella.h"; sourceTree = "<group>"; };
+		37F04655DD0BA66150DFE88F2A2EE09D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		38943EB5863DFB433CB11FB6FA8CDE81 /* ChainUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChainUI.framework; path = ChainUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39186FB584B7C53111C2FB2D826E9BAE /* UIImageView+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Chainable.h"; path = "ChainUI/Classes/Chainable/UIImageView+Chainable.h"; sourceTree = "<group>"; };
+		3B8AE676E22D412143501A75CA565F78 /* UISlider+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+Chainable.h"; path = "ChainUI/Classes/Chainable/UISlider+Chainable.h"; sourceTree = "<group>"; };
+		3C019F573E6F5DC9383F02630F422E87 /* Pods-ChainUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChainUI_Example.modulemap"; sourceTree = "<group>"; };
+		45143FA88EEC083146083B322BD0BAE9 /* Pods-ChainUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4A5B5ED4B04B9F4E8A837B42E57C1B8F /* UIView+CUIFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CUIFrame.m"; path = "ChainUI/Classes/Public/UIView+CUIFrame.m"; sourceTree = "<group>"; };
+		4C335A08E93A2B921933CA968789634D /* Pods-ChainUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChainUI_Example-Info.plist"; sourceTree = "<group>"; };
+		4C75EE19E75BC3BD37376C0FD2EB4646 /* NSAttributedString+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Chainable.m"; path = "ChainUI/Classes/Chainable/NSAttributedString+Chainable.m"; sourceTree = "<group>"; };
+		553F02396820467C46BFBDBFD5A82BB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		590E33DB1CA998DDDBABF63A43E18CA2 /* CUITypeConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUITypeConverter.h; path = ChainUI/Classes/Private/CUITypeConverter.h; sourceTree = "<group>"; };
+		59864BF9BEA7D5C93590DDB6A2873158 /* UISwitch+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISwitch+Chainable.m"; path = "ChainUI/Classes/Chainable/UISwitch+Chainable.m"; sourceTree = "<group>"; };
+		5A24CEC2CC2598C5213B07B1E93529A3 /* CUIStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIStack.h; path = ChainUI/Classes/Public/CUIStack.h; sourceTree = "<group>"; };
+		5CF0A795BC4FFA0C72D7DCDB5FC3D6CB /* Pods-ChainUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChainUI_Example-dummy.m"; sourceTree = "<group>"; };
+		5F9050C10468BE1E9E85A35AB555F354 /* CUIDefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIDefs.h; path = ChainUI/Classes/Private/CUIDefs.h; sourceTree = "<group>"; };
+		5FA1B9FB44BF3ABB3837FCA9145A50F5 /* UIPageControl+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPageControl+Chainable.m"; path = "ChainUI/Classes/Chainable/UIPageControl+Chainable.m"; sourceTree = "<group>"; };
+		606EF68DBC67E4A0E74151104A23BBE9 /* NSAttributedString+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Chainable.h"; path = "ChainUI/Classes/Chainable/NSAttributedString+Chainable.h"; sourceTree = "<group>"; };
+		6A1229F46A4CA64F090AE040715057B6 /* ChainUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChainUI-umbrella.h"; sourceTree = "<group>"; };
+		6A7CF5C04B3CCDDB98ED0C3ED504607A /* Pods-ChainUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChainUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6CDA97FE696D3AA6EBFA91F55C5D80C7 /* CUIPrivates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIPrivates.h; path = ChainUI/Classes/Private/CUIPrivates.h; sourceTree = "<group>"; };
+		7018FE6153C235E83E1DBBC842C4C055 /* CUIAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIAlert.m; path = ChainUI/Classes/Private/CUIAlert.m; sourceTree = "<group>"; };
+		74BC996258599C863CBA5BF3E547297C /* Pods_ChainUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChainUI_Tests.framework; path = "Pods-ChainUI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		763E34377B52F6B52F9ADCCCA7394A81 /* CUIConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIConstraint.m; path = ChainUI/Classes/Private/CUIConstraint.m; sourceTree = "<group>"; };
+		76B56DC31C2D80289725CAC9FDE65F3B /* NSString+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Chainable.m"; path = "ChainUI/Classes/Chainable/NSString+Chainable.m"; sourceTree = "<group>"; };
+		7AE63C97DF6C2C3BE910418F189AA2C5 /* UITextView+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+Chainable.h"; path = "ChainUI/Classes/Chainable/UITextView+Chainable.h"; sourceTree = "<group>"; };
+		7AEECA763970BFED73442C27B7DDED2D /* CUITypeConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUITypeConverter.m; path = ChainUI/Classes/Private/CUITypeConverter.m; sourceTree = "<group>"; };
+		847070CF8EB44F7BA57189E2776374EF /* NSArray+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chainable.h"; path = "ChainUI/Classes/Chainable/NSArray+Chainable.h"; sourceTree = "<group>"; };
+		857B8F76874BA7565FEF0FED8AF466D6 /* CUIConstraint+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CUIConstraint+Chainable.m"; path = "ChainUI/Classes/Chainable/CUIConstraint+Chainable.m"; sourceTree = "<group>"; };
+		866483F9DF4F9271EB66804DB0C5A5D4 /* UIView+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Chainable.m"; path = "ChainUI/Classes/Chainable/UIView+Chainable.m"; sourceTree = "<group>"; };
+		896DFD421BFD55A098C936528E28A738 /* UITextField+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Chainable.h"; path = "ChainUI/Classes/Chainable/UITextField+Chainable.h"; sourceTree = "<group>"; };
+		8A0BCC50A12B61F847D207DBB8CFF0AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8A16701862EDD50ABD9494DA59E26533 /* CUIConstraint+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CUIConstraint+Chainable.h"; path = "ChainUI/Classes/Chainable/CUIConstraint+Chainable.h"; sourceTree = "<group>"; };
+		8C475BDE24842EA896C8AB8526DCC449 /* Pods-ChainUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		90E01640A37DB6022731F40F670DB59F /* UIImage+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Chainable.h"; path = "ChainUI/Classes/Chainable/UIImage+Chainable.h"; sourceTree = "<group>"; };
+		9316CD5F4CC693382E23C7A3ED61370A /* ChainUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChainUI.debug.xcconfig; sourceTree = "<group>"; };
+		94FF775F369A3214366C036BA37ED3F5 /* CUIStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIStack.m; path = ChainUI/Classes/Public/CUIStack.m; sourceTree = "<group>"; };
+		95741A11F4979018682892BFE4D3BA22 /* Pods-ChainUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChainUI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F1B58582D5759E8036FF20048F4032D /* UIVisualEffectView+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIVisualEffectView+Chainable.m"; path = "ChainUI/Classes/Chainable/UIVisualEffectView+Chainable.m"; sourceTree = "<group>"; };
+		A05270A1956345BD6F7F01066EC6B03B /* UIPageControl+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPageControl+Chainable.h"; path = "ChainUI/Classes/Chainable/UIPageControl+Chainable.h"; sourceTree = "<group>"; };
+		A09FE750617A9B46AFB384FD057C087D /* ChainUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChainUI.modulemap; sourceTree = "<group>"; };
+		A14C56D6D9287B2A9AA0EC68D13C4E78 /* UIView+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Chainable.h"; path = "ChainUI/Classes/Chainable/UIView+Chainable.h"; sourceTree = "<group>"; };
+		A5636A8C1086894DB03684F777540680 /* UIImage+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Chainable.m"; path = "ChainUI/Classes/Chainable/UIImage+Chainable.m"; sourceTree = "<group>"; };
+		A9286E212FFAA85FB8CEA40E0282685E /* UIColor+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chainable.m"; path = "ChainUI/Classes/Chainable/UIColor+Chainable.m"; sourceTree = "<group>"; };
+		AAE4FE2AFE9F22C4A01C1454FAEE8C24 /* ChainUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ChainUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB804112FE97E89318F55596796FD541 /* UISwitch+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISwitch+Chainable.h"; path = "ChainUI/Classes/Chainable/UISwitch+Chainable.h"; sourceTree = "<group>"; };
+		AB82019585B6566C3A0BC7C10F7A7163 /* UILabel+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chainable.h"; path = "ChainUI/Classes/Chainable/UILabel+Chainable.h"; sourceTree = "<group>"; };
+		AE811BAB4A13E1FB909D386DED8EF0B3 /* UITextField+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Chainable.m"; path = "ChainUI/Classes/Chainable/UITextField+Chainable.m"; sourceTree = "<group>"; };
+		AF4669247E89B99837BCFF8269FFAAA0 /* UIFont+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+Chainable.h"; path = "ChainUI/Classes/Chainable/UIFont+Chainable.h"; sourceTree = "<group>"; };
+		AF77E014AA3ACC5C094A1D92E8F3F165 /* UIButton+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chainable.h"; path = "ChainUI/Classes/Chainable/UIButton+Chainable.h"; sourceTree = "<group>"; };
+		B0E46D6071EB9B82C0D87B4AA834CC63 /* ChainUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChainUI-dummy.m"; sourceTree = "<group>"; };
+		B48C38841CD9C0E653B4B83DAC2F87AE /* UIColor+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chainable.h"; path = "ChainUI/Classes/Chainable/UIColor+Chainable.h"; sourceTree = "<group>"; };
+		B73122235721173B5884DB3117935BE3 /* UIVisualEffectView+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIVisualEffectView+Chainable.h"; path = "ChainUI/Classes/Chainable/UIVisualEffectView+Chainable.h"; sourceTree = "<group>"; };
+		BA4A413C854B16FD0630FCE07CEA1E7B /* NSArray+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chainable.m"; path = "ChainUI/Classes/Chainable/NSArray+Chainable.m"; sourceTree = "<group>"; };
+		C356F0D5EA3FE34628FB3941BD0BA90E /* CUIStyle+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CUIStyle+Chainable.m"; path = "ChainUI/Classes/Chainable/CUIStyle+Chainable.m"; sourceTree = "<group>"; };
+		C7C6CFF04249A4D52FBDC4029264C46F /* Pods-ChainUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChainUI_Tests-dummy.m"; sourceTree = "<group>"; };
+		C83CB1F60ECB6EECE4898F528D011FE3 /* CUIStaticTableView+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CUIStaticTableView+Chainable.m"; path = "ChainUI/Classes/Chainable/CUIStaticTableView+Chainable.m"; sourceTree = "<group>"; };
+		C9C2C3BFEC8AF8CF92D92B1B059FBD1D /* UISegmentedControl+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+Chainable.h"; path = "ChainUI/Classes/Chainable/UISegmentedControl+Chainable.h"; sourceTree = "<group>"; };
+		CD5FF62B843E247A791E081739199D86 /* NSString+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Chainable.h"; path = "ChainUI/Classes/Chainable/NSString+Chainable.h"; sourceTree = "<group>"; };
+		D037667F0B998348AC5CC8DA06CC0BAC /* CUIStack+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CUIStack+Chainable.h"; path = "ChainUI/Classes/Chainable/CUIStack+Chainable.h"; sourceTree = "<group>"; };
+		D238F4C962B69D695D8B0F4D74064929 /* CUIAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIAlert.h; path = ChainUI/Classes/Private/CUIAlert.h; sourceTree = "<group>"; };
+		D2FE500053909C8091A304B9A34C0513 /* UILabel+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chainable.m"; path = "ChainUI/Classes/Chainable/UILabel+Chainable.m"; sourceTree = "<group>"; };
+		D5C60D88CDFFA76EE3C2A52701319FCD /* CUIUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIUtils.h; path = ChainUI/Classes/Private/CUIUtils.h; sourceTree = "<group>"; };
+		D6380EEABC2EF4FB51C6EF9EB0743B6B /* CUIStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIStyle.h; path = ChainUI/Classes/Private/CUIStyle.h; sourceTree = "<group>"; };
+		DA5EF6BA0BF8402B0293A770D8FC1B96 /* CUIPrivates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIPrivates.m; path = ChainUI/Classes/Private/CUIPrivates.m; sourceTree = "<group>"; };
+		DDCA58198B4AC6AEF20C4FDCE24F5EC3 /* UIButton+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chainable.m"; path = "ChainUI/Classes/Chainable/UIButton+Chainable.m"; sourceTree = "<group>"; };
+		DF8C9A9D6B54C72F6AE8B444FE0B5FA9 /* CUIAlert+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CUIAlert+Chainable.m"; path = "ChainUI/Classes/Chainable/CUIAlert+Chainable.m"; sourceTree = "<group>"; };
+		DFAC17E35C4C855B7DD30B7CFD8A28A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E289975B56935D211799B6CCFC0A0F73 /* CUIStaticTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CUIStaticTableView.m; path = ChainUI/Classes/Private/CUIStaticTableView.m; sourceTree = "<group>"; };
+		E5B1E1DEE5B200A66FD739F4690BFD0B /* Pods-ChainUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChainUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5BB5B51EF84009CE4EF61A87BED7825 /* ChainUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChainUI.release.xcconfig; sourceTree = "<group>"; };
+		EA1771A0FD4826CC7473F4723BBB1208 /* Pods-ChainUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChainUI_Tests-Info.plist"; sourceTree = "<group>"; };
+		F19F3712067F5085103067E46A09BCC6 /* ChainUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChainUI-prefix.pch"; sourceTree = "<group>"; };
+		F5037AA67F9B96C32538F4C1F5B1CDB4 /* CUIStaticTableView+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CUIStaticTableView+Chainable.h"; path = "ChainUI/Classes/Chainable/CUIStaticTableView+Chainable.h"; sourceTree = "<group>"; };
+		F7E2EB3AE684F38193E74CA6B30E38BF /* UIStepper+Chainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStepper+Chainable.h"; path = "ChainUI/Classes/Chainable/UIStepper+Chainable.h"; sourceTree = "<group>"; };
+		FB3B75E55ADF5A68219823095766F15D /* Pods-ChainUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FBC1A3176842F3961DC544AB079AE072 /* CUIBlockInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CUIBlockInfo.h; path = ChainUI/Classes/Private/CUIBlockInfo.h; sourceTree = "<group>"; };
+		FC8BC94D9DF23078DFB802B0A618EC60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FE216F3DED21B34EFD31802FC58D6D91 /* UIStepper+Chainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+Chainable.m"; path = "ChainUI/Classes/Chainable/UIStepper+Chainable.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61F742F5C5E203381BB26BC61047F4C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F773BE9A946EE1994908F9945544B25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF88F80818E01A1951F3E3E986FC0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999628DF86CFE1095308C7E8E824855F /* CoreGraphics.framework in Frameworks */,
+				E75BACC213D4F24EEA2C2E4E6CECB967 /* Foundation.framework in Frameworks */,
+				CE58CA1F1EE3A25A87E2D24828089093 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98FA2BDCF0A769DFC246DAA42E72ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688E5F99910F5C100803DA9DF51D1BB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D8528256A7AF28D53631225E57465A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A465780238C5D1AD1613918F7E68B1F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A51996B32AD4A9C67A8A3DC0AF5FD9B /* Pods-ChainUI_Example */,
+				3348B3D96A47CB5B9C448EA8FA2FE0C5 /* Pods-ChainUI_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		20D8528256A7AF28D53631225E57465A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				553F02396820467C46BFBDBFD5A82BB7 /* CoreGraphics.framework */,
+				8A0BCC50A12B61F847D207DBB8CFF0AF /* Foundation.framework */,
+				DFAC17E35C4C855B7DD30B7CFD8A28A0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2A51996B32AD4A9C67A8A3DC0AF5FD9B /* Pods-ChainUI_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3C019F573E6F5DC9383F02630F422E87 /* Pods-ChainUI_Example.modulemap */,
+				6A7CF5C04B3CCDDB98ED0C3ED504607A /* Pods-ChainUI_Example-acknowledgements.markdown */,
+				08829E6C54C2BE96CF662551BBD3737E /* Pods-ChainUI_Example-acknowledgements.plist */,
+				5CF0A795BC4FFA0C72D7DCDB5FC3D6CB /* Pods-ChainUI_Example-dummy.m */,
+				95741A11F4979018682892BFE4D3BA22 /* Pods-ChainUI_Example-frameworks.sh */,
+				4C335A08E93A2B921933CA968789634D /* Pods-ChainUI_Example-Info.plist */,
+				33071EF17F628EF1A3E63692A4B3F881 /* Pods-ChainUI_Example-umbrella.h */,
+				8C475BDE24842EA896C8AB8526DCC449 /* Pods-ChainUI_Example.debug.xcconfig */,
+				45143FA88EEC083146083B322BD0BAE9 /* Pods-ChainUI_Example.release.xcconfig */,
+			);
+			name = "Pods-ChainUI_Example";
+			path = "Target Support Files/Pods-ChainUI_Example";
+			sourceTree = "<group>";
+		};
+		3348B3D96A47CB5B9C448EA8FA2FE0C5 /* Pods-ChainUI_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13923FCD43E3204D4E46F95D24D49758 /* Pods-ChainUI_Tests.modulemap */,
+				2693CDD4795001E01C3769B97FF81F6B /* Pods-ChainUI_Tests-acknowledgements.markdown */,
+				E5B1E1DEE5B200A66FD739F4690BFD0B /* Pods-ChainUI_Tests-acknowledgements.plist */,
+				C7C6CFF04249A4D52FBDC4029264C46F /* Pods-ChainUI_Tests-dummy.m */,
+				EA1771A0FD4826CC7473F4723BBB1208 /* Pods-ChainUI_Tests-Info.plist */,
+				2F6B4B86F16611E2E244BE21827A8E2E /* Pods-ChainUI_Tests-umbrella.h */,
+				1FB189482210D19F45DF30EFFF40DB15 /* Pods-ChainUI_Tests.debug.xcconfig */,
+				FB3B75E55ADF5A68219823095766F15D /* Pods-ChainUI_Tests.release.xcconfig */,
+			);
+			name = "Pods-ChainUI_Tests";
+			path = "Target Support Files/Pods-ChainUI_Tests";
+			sourceTree = "<group>";
+		};
+		43B32DD8F0B51C62F07BC71515381538 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4FE2AFE9F22C4A01C1454FAEE8C24 /* ChainUI.podspec */,
+				FC8BC94D9DF23078DFB802B0A618EC60 /* LICENSE */,
+				37F04655DD0BA66150DFE88F2A2EE09D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6A4E353A7ACE70B1E09DA41D3D152E56 /* ChainUI */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F63F53CB481F845FB3E8ADB025C5C /* Chainable */,
+				43B32DD8F0B51C62F07BC71515381538 /* Pod */,
+				FE66A20507CE26AE17F18038F8DBB813 /* Private */,
+				C8500CA2E80CEF9D4DDE45446833F7D7 /* Public */,
+				BD2A48611BE6B31E7EFD6489BD9C51E8 /* Support Files */,
+			);
+			name = ChainUI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7FA10CD4E8DA8E04374F1272F458D830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38943EB5863DFB433CB11FB6FA8CDE81 /* ChainUI.framework */,
+				054C22225A91619C836C38EB246AB48A /* Pods_ChainUI_Example.framework */,
+				74BC996258599C863CBA5BF3E547297C /* Pods_ChainUI_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7F63F53CB481F845FB3E8ADB025C5C /* Chainable */ = {
+			isa = PBXGroup;
+			children = (
+				1569D5777DE59F73DE0B145A53BB3F2D /* CUIAlert+Chainable.h */,
+				DF8C9A9D6B54C72F6AE8B444FE0B5FA9 /* CUIAlert+Chainable.m */,
+				8A16701862EDD50ABD9494DA59E26533 /* CUIConstraint+Chainable.h */,
+				857B8F76874BA7565FEF0FED8AF466D6 /* CUIConstraint+Chainable.m */,
+				D037667F0B998348AC5CC8DA06CC0BAC /* CUIStack+Chainable.h */,
+				00DF0D276B5597CE807575F9E03103C6 /* CUIStack+Chainable.m */,
+				F5037AA67F9B96C32538F4C1F5B1CDB4 /* CUIStaticTableView+Chainable.h */,
+				C83CB1F60ECB6EECE4898F528D011FE3 /* CUIStaticTableView+Chainable.m */,
+				126F4404D551FECF031A03C631604DE7 /* CUIStyle+Chainable.h */,
+				C356F0D5EA3FE34628FB3941BD0BA90E /* CUIStyle+Chainable.m */,
+				847070CF8EB44F7BA57189E2776374EF /* NSArray+Chainable.h */,
+				BA4A413C854B16FD0630FCE07CEA1E7B /* NSArray+Chainable.m */,
+				606EF68DBC67E4A0E74151104A23BBE9 /* NSAttributedString+Chainable.h */,
+				4C75EE19E75BC3BD37376C0FD2EB4646 /* NSAttributedString+Chainable.m */,
+				CD5FF62B843E247A791E081739199D86 /* NSString+Chainable.h */,
+				76B56DC31C2D80289725CAC9FDE65F3B /* NSString+Chainable.m */,
+				AF77E014AA3ACC5C094A1D92E8F3F165 /* UIButton+Chainable.h */,
+				DDCA58198B4AC6AEF20C4FDCE24F5EC3 /* UIButton+Chainable.m */,
+				B48C38841CD9C0E653B4B83DAC2F87AE /* UIColor+Chainable.h */,
+				A9286E212FFAA85FB8CEA40E0282685E /* UIColor+Chainable.m */,
+				AF4669247E89B99837BCFF8269FFAAA0 /* UIFont+Chainable.h */,
+				065754483DC9BC6C25E24646EBE9BD6D /* UIFont+Chainable.m */,
+				90E01640A37DB6022731F40F670DB59F /* UIImage+Chainable.h */,
+				A5636A8C1086894DB03684F777540680 /* UIImage+Chainable.m */,
+				39186FB584B7C53111C2FB2D826E9BAE /* UIImageView+Chainable.h */,
+				1122D5BE8B89E35B22BA1C0F94257885 /* UIImageView+Chainable.m */,
+				AB82019585B6566C3A0BC7C10F7A7163 /* UILabel+Chainable.h */,
+				D2FE500053909C8091A304B9A34C0513 /* UILabel+Chainable.m */,
+				A05270A1956345BD6F7F01066EC6B03B /* UIPageControl+Chainable.h */,
+				5FA1B9FB44BF3ABB3837FCA9145A50F5 /* UIPageControl+Chainable.m */,
+				C9C2C3BFEC8AF8CF92D92B1B059FBD1D /* UISegmentedControl+Chainable.h */,
+				24EA3C647E3B2AD7BA0DACD04481D20C /* UISegmentedControl+Chainable.m */,
+				3B8AE676E22D412143501A75CA565F78 /* UISlider+Chainable.h */,
+				16C3EF9A1AF6CFD4111D3AFF0F76319B /* UISlider+Chainable.m */,
+				F7E2EB3AE684F38193E74CA6B30E38BF /* UIStepper+Chainable.h */,
+				FE216F3DED21B34EFD31802FC58D6D91 /* UIStepper+Chainable.m */,
+				AB804112FE97E89318F55596796FD541 /* UISwitch+Chainable.h */,
+				59864BF9BEA7D5C93590DDB6A2873158 /* UISwitch+Chainable.m */,
+				896DFD421BFD55A098C936528E28A738 /* UITextField+Chainable.h */,
+				AE811BAB4A13E1FB909D386DED8EF0B3 /* UITextField+Chainable.m */,
+				7AE63C97DF6C2C3BE910418F189AA2C5 /* UITextView+Chainable.h */,
+				32604FA9FBCFC22B59730FD7971C3A94 /* UITextView+Chainable.m */,
+				A14C56D6D9287B2A9AA0EC68D13C4E78 /* UIView+Chainable.h */,
+				866483F9DF4F9271EB66804DB0C5A5D4 /* UIView+Chainable.m */,
+				B73122235721173B5884DB3117935BE3 /* UIVisualEffectView+Chainable.h */,
+				9F1B58582D5759E8036FF20048F4032D /* UIVisualEffectView+Chainable.m */,
+			);
+			name = Chainable;
+			sourceTree = "<group>";
+		};
+		BD2A48611BE6B31E7EFD6489BD9C51E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A09FE750617A9B46AFB384FD057C087D /* ChainUI.modulemap */,
+				B0E46D6071EB9B82C0D87B4AA834CC63 /* ChainUI-dummy.m */,
+				2CD6B61EE7B2AB3853F073FB17FDF626 /* ChainUI-Info.plist */,
+				F19F3712067F5085103067E46A09BCC6 /* ChainUI-prefix.pch */,
+				6A1229F46A4CA64F090AE040715057B6 /* ChainUI-umbrella.h */,
+				9316CD5F4CC693382E23C7A3ED61370A /* ChainUI.debug.xcconfig */,
+				E5BB5B51EF84009CE4EF61A87BED7825 /* ChainUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ChainUI";
+			sourceTree = "<group>";
+		};
+		C8500CA2E80CEF9D4DDE45446833F7D7 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5A24CEC2CC2598C5213B07B1E93529A3 /* CUIStack.h */,
+				94FF775F369A3214366C036BA37ED3F5 /* CUIStack.m */,
+				058CD4C9C03DAB83A2B81BB0408ADA11 /* UILabel+CUILink.h */,
+				23409EDC1CBE59ED3744CA709F03DB14 /* UILabel+CUILink.m */,
+				063C22B013AC35A1440511989EB9058D /* UIView+CUIFrame.h */,
+				4A5B5ED4B04B9F4E8A837B42E57C1B8F /* UIView+CUIFrame.m */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EA138998AA53DB56A5560B3DEDF5587F /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				7FA10CD4E8DA8E04374F1272F458D830 /* Products */,
+				0A465780238C5D1AD1613918F7E68B1F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EA138998AA53DB56A5560B3DEDF5587F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E353A7ACE70B1E09DA41D3D152E56 /* ChainUI */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FE66A20507CE26AE17F18038F8DBB813 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				D238F4C962B69D695D8B0F4D74064929 /* CUIAlert.h */,
+				7018FE6153C235E83E1DBBC842C4C055 /* CUIAlert.m */,
+				FBC1A3176842F3961DC544AB079AE072 /* CUIBlockInfo.h */,
+				25125B92EDFCA6F4B3B069B1DFB35C15 /* CUIBlockInfo.m */,
+				0140BCE9CC2B06E8257A039142649A9D /* CUIConstraint.h */,
+				763E34377B52F6B52F9ADCCCA7394A81 /* CUIConstraint.m */,
+				5F9050C10468BE1E9E85A35AB555F354 /* CUIDefs.h */,
+				6CDA97FE696D3AA6EBFA91F55C5D80C7 /* CUIPrivates.h */,
+				DA5EF6BA0BF8402B0293A770D8FC1B96 /* CUIPrivates.m */,
+				08EC5252E07EC241277F21708EA8908E /* CUIStaticTableView.h */,
+				E289975B56935D211799B6CCFC0A0F73 /* CUIStaticTableView.m */,
+				D6380EEABC2EF4FB51C6EF9EB0743B6B /* CUIStyle.h */,
+				027E053975734B998CF32EC846BDF6CD /* CUIStyle.m */,
+				590E33DB1CA998DDDBABF63A43E18CA2 /* CUITypeConverter.h */,
+				7AEECA763970BFED73442C27B7DDED2D /* CUITypeConverter.m */,
+				D5C60D88CDFFA76EE3C2A52701319FCD /* CUIUtils.h */,
+				0D2B8D9BDF744F71E32A1506F4E1B5BA /* CUIUtils.m */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F06B1985A38F7D62C0609BE8BE2044F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8AA180C3A975FAD2B6CEFEA5502D7C /* Pods-ChainUI_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F89CF26F5A85662EE01CEEACC77814 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A1BAE05702C0021C5905CFE59D05FE /* Pods-ChainUI_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBF022282BC5BECEA2B959A9C9C9D48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0AF99F0E72A9FC4E13FCCAC961A0FB /* ChainUI-umbrella.h in Headers */,
+				48250ADE6B58B2E8E2A4C92279172188 /* CUIAlert+Chainable.h in Headers */,
+				C74731ED0ED65585618B9AD7F6EA46C4 /* CUIAlert.h in Headers */,
+				6F162D9271696B07DA6F5452C01FFF76 /* CUIBlockInfo.h in Headers */,
+				1378509BEFF28EE8799AF3A2E2683D86 /* CUIConstraint+Chainable.h in Headers */,
+				D18446B94C46F6D51F3F7CEB1CE508CD /* CUIConstraint.h in Headers */,
+				7D8CE8CA5B444A4033016732D1C10ED6 /* CUIDefs.h in Headers */,
+				66E102EFEDA73D1B55916ACCFE2293D6 /* CUIPrivates.h in Headers */,
+				5568BFF952192A5F0F2A75C4142E976E /* CUIStack+Chainable.h in Headers */,
+				3147E4E46A959CCEB2842A1E4E26C766 /* CUIStack.h in Headers */,
+				E3BCC3C89F4D423246D57476A6D8F98E /* CUIStaticTableView+Chainable.h in Headers */,
+				5DAC5791381FD11EB322EB68EA7F8E2A /* CUIStaticTableView.h in Headers */,
+				61C5EA0CD30527774BA4D280B22988C1 /* CUIStyle+Chainable.h in Headers */,
+				9D1D9F8B2CFB790A4F6D9154C3D991E8 /* CUIStyle.h in Headers */,
+				89A8EB9B50C5DF169CD648E641A883E7 /* CUITypeConverter.h in Headers */,
+				32045A7E540F4C24B8A07B9466BC5CB7 /* CUIUtils.h in Headers */,
+				C984A1EFD3FDA94241EB94D94775683D /* NSArray+Chainable.h in Headers */,
+				76DF1DDDDE8F4E4DD86927BAF69FA6FE /* NSAttributedString+Chainable.h in Headers */,
+				68B21D3D04D66C0DE553F9F1B4A82478 /* NSString+Chainable.h in Headers */,
+				B7ACD108ED98427E230C931097C5E660 /* UIButton+Chainable.h in Headers */,
+				884DEE1C6F2AAC258743F5A308AFAD29 /* UIColor+Chainable.h in Headers */,
+				E507A22D484684E7DA8F9C55CF6BDCD2 /* UIFont+Chainable.h in Headers */,
+				C780015F5793C4158471B28AC18198B0 /* UIImage+Chainable.h in Headers */,
+				89D6EC0A589B3A4C0BDD93C8AAA78453 /* UIImageView+Chainable.h in Headers */,
+				62A045980EDC95F686983E3A4A2FEA93 /* UILabel+Chainable.h in Headers */,
+				6010A95EA7B7E119195EB77518A170C1 /* UILabel+CUILink.h in Headers */,
+				64BCEEAC13E8FECA2E4232A1E0E96A32 /* UIPageControl+Chainable.h in Headers */,
+				F2E3FA54E4D7AA766A8B6E23626DE347 /* UISegmentedControl+Chainable.h in Headers */,
+				02A9C6DFCAC0ED96BD549912F2E7828A /* UISlider+Chainable.h in Headers */,
+				4F6571AAAD246F8FA31903DCE62AAE45 /* UIStepper+Chainable.h in Headers */,
+				2883171485541BB1BAC9A34EDE1096EC /* UISwitch+Chainable.h in Headers */,
+				F3CA9EB24694794246D6B86A1196CE5E /* UITextField+Chainable.h in Headers */,
+				4D5E1376721B6B94957019E4A7509C1E /* UITextView+Chainable.h in Headers */,
+				C262442BF2F956D86B3B796182D39769 /* UIView+Chainable.h in Headers */,
+				18D0D6D6FBDD71D3290CAEEC6B1781E9 /* UIView+CUIFrame.h in Headers */,
+				47A420D7D88E0225CA0C80E28A79988D /* UIVisualEffectView+Chainable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E3CEC7FD17E8C822C59D4A58E9CE7379 /* Pods-ChainUI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84658C0F9FB72944CF3640F0F18CA139 /* Build configuration list for PBXNativeTarget "Pods-ChainUI_Tests" */;
+			buildPhases = (
+				1F06B1985A38F7D62C0609BE8BE2044F /* Headers */,
+				A7D1214C8D978160EEA98F5F55511988 /* Sources */,
+				B98FA2BDCF0A769DFC246DAA42E72ABA /* Frameworks */,
+				A2F6C689A8DB75202F834855BD944FF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0D5ED5AA7E888CBD1E307AF245A2FD7 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChainUI_Tests";
+			productName = "Pods-ChainUI_Tests";
+			productReference = 74BC996258599C863CBA5BF3E547297C /* Pods_ChainUI_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E54EF6B12369109E29D224B56EC2498D /* ChainUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E449B78DDBCF51F3841600DB5D3D828 /* Build configuration list for PBXNativeTarget "ChainUI" */;
+			buildPhases = (
+				DCBF022282BC5BECEA2B959A9C9C9D48 /* Headers */,
+				2BF4431B4C4F99137A79977492BCA72C /* Sources */,
+				9DF88F80818E01A1951F3E3E986FC0E4 /* Frameworks */,
+				BFA0A73164A5D1513355BA14D815913C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChainUI;
+			productName = ChainUI;
+			productReference = 38943EB5863DFB433CB11FB6FA8CDE81 /* ChainUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDC32AC655ABC31E7C96614A10DC354A /* Pods-ChainUI_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E7501749A4FB7FF4BF66A15DEB52597 /* Build configuration list for PBXNativeTarget "Pods-ChainUI_Example" */;
+			buildPhases = (
+				93F89CF26F5A85662EE01CEEACC77814 /* Headers */,
+				74C95238F87B4BA1CF84703DB29D2D4F /* Sources */,
+				61F742F5C5E203381BB26BC61047F4C8 /* Frameworks */,
+				2BCAA9A5CEED60DF0B02FA2644E2815F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A077106B78D57DDA44332FD4062D06 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChainUI_Example";
+			productName = "Pods-ChainUI_Example";
+			productReference = 054C22225A91619C836C38EB246AB48A /* Pods_ChainUI_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7FA10CD4E8DA8E04374F1272F458D830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E54EF6B12369109E29D224B56EC2498D /* ChainUI */,
+				EDC32AC655ABC31E7C96614A10DC354A /* Pods-ChainUI_Example */,
+				E3CEC7FD17E8C822C59D4A58E9CE7379 /* Pods-ChainUI_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BCAA9A5CEED60DF0B02FA2644E2815F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F6C689A8DB75202F834855BD944FF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA0A73164A5D1513355BA14D815913C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF4431B4C4F99137A79977492BCA72C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD54985A125BF1986A07DBD83FE0871 /* ChainUI-dummy.m in Sources */,
+				D2D3F1D37A5F12A041DA9A45651E64C6 /* CUIAlert+Chainable.m in Sources */,
+				A5B46B31C7CACAC1BFA8C443AB15357D /* CUIAlert.m in Sources */,
+				0DEDB0AB729B25AD84573199E8060CDE /* CUIBlockInfo.m in Sources */,
+				CF3BE045C482BC7593FC1B9333CA6F9F /* CUIConstraint+Chainable.m in Sources */,
+				809DCAE718B7DEC21DFB4E8397689E3B /* CUIConstraint.m in Sources */,
+				ECD7FF5143AC3ED5DF9355889657C33E /* CUIPrivates.m in Sources */,
+				6BB4B567EA12CF8FE11330A1883833FD /* CUIStack+Chainable.m in Sources */,
+				58102B53972658C7B1219F2EC72E2883 /* CUIStack.m in Sources */,
+				B4DCB6F1B89A4D06E62CC8E484A3F9A2 /* CUIStaticTableView+Chainable.m in Sources */,
+				C47A7FFACFE8CF0CECB42490FC18934F /* CUIStaticTableView.m in Sources */,
+				9CC3FE22DE7D2302526B2A955BB1131D /* CUIStyle+Chainable.m in Sources */,
+				0DE2D95C05A21D887653691C72103B7F /* CUIStyle.m in Sources */,
+				41BBD477A63302CEEB824FEB33E661ED /* CUITypeConverter.m in Sources */,
+				6D92B95C065C64227D77F3070D016E0B /* CUIUtils.m in Sources */,
+				4F68B69F586C2EA3D34B3C08062FE788 /* NSArray+Chainable.m in Sources */,
+				239053FF4B04122A86A09BA1E1FBB045 /* NSAttributedString+Chainable.m in Sources */,
+				05D2492DE9BB9B5F79E6CF1000C7A7B4 /* NSString+Chainable.m in Sources */,
+				557934932926F956BA53A5B2E3B8849F /* UIButton+Chainable.m in Sources */,
+				D234ADCC756CE45C6A4E4E0ACB51A55D /* UIColor+Chainable.m in Sources */,
+				E421EB6EC50AE6C2A2D4B6EFE967C2CB /* UIFont+Chainable.m in Sources */,
+				BE3FB9E1C811310F272002892437D1E0 /* UIImage+Chainable.m in Sources */,
+				2EF49DC9B6844A39C7CBFBAD448DEB7C /* UIImageView+Chainable.m in Sources */,
+				3F4E1EC82AD0CC9FBFBA0CA227FBB442 /* UILabel+Chainable.m in Sources */,
+				0AF66163E0EFD6C50F12C0D48159554E /* UILabel+CUILink.m in Sources */,
+				5AA43C36A71B1091E81F112C08D80182 /* UIPageControl+Chainable.m in Sources */,
+				961792AA0C9081EA9A109779AA09679E /* UISegmentedControl+Chainable.m in Sources */,
+				CF1375FFE6B404BEFF8CFF11D4374212 /* UISlider+Chainable.m in Sources */,
+				F691651AD8CEC23686CB4EBF20170EF7 /* UIStepper+Chainable.m in Sources */,
+				D7AFF512A40AD19D7867AC5AF75CFDBC /* UISwitch+Chainable.m in Sources */,
+				17BA9394335C54F0D6A114DA9095B240 /* UITextField+Chainable.m in Sources */,
+				CDDF9E2EC79555D45212378978B0F425 /* UITextView+Chainable.m in Sources */,
+				E14B1D9F76153B30D8F72AE5D5E1DCD2 /* UIView+Chainable.m in Sources */,
+				F60DD4980D674B4000ABF733D736D917 /* UIView+CUIFrame.m in Sources */,
+				C760CCBB712F407126E184560089A930 /* UIVisualEffectView+Chainable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C95238F87B4BA1CF84703DB29D2D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CEED4B471A2288D00BA8CA65186BF3 /* Pods-ChainUI_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D1214C8D978160EEA98F5F55511988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2409824946B02584C5CB736F361A07FF /* Pods-ChainUI_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3A077106B78D57DDA44332FD4062D06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChainUI;
+			target = E54EF6B12369109E29D224B56EC2498D /* ChainUI */;
+			targetProxy = AF21AC3D55C22BAE35704E4B4E6F4852 /* PBXContainerItemProxy */;
+		};
+		F0D5ED5AA7E888CBD1E307AF245A2FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ChainUI_Example";
+			target = EDC32AC655ABC31E7C96614A10DC354A /* Pods-ChainUI_Example */;
+			targetProxy = 777D0D335A55EF363B7360C72F361433 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05A4EE7293C44607914909CE538BF6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5BB5B51EF84009CE4EF61A87BED7825 /* ChainUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChainUI/ChainUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChainUI/ChainUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChainUI/ChainUI.modulemap";
+				PRODUCT_MODULE_NAME = ChainUI;
+				PRODUCT_NAME = ChainUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		07CB0476DA6F6E36DC48C50DBD0603BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9316CD5F4CC693382E23C7A3ED61370A /* ChainUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChainUI/ChainUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChainUI/ChainUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChainUI/ChainUI.modulemap";
+				PRODUCT_MODULE_NAME = ChainUI;
+				PRODUCT_NAME = ChainUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B2F8E4FCECF6FB185D8A6D30BFF77C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45143FA88EEC083146083B322BD0BAE9 /* Pods-ChainUI_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainUI_Example/Pods-ChainUI_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainUI_Example/Pods-ChainUI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B05BF2181857D7F0F08C2B37F9004138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB3B75E55ADF5A68219823095766F15D /* Pods-ChainUI_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainUI_Tests/Pods-ChainUI_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainUI_Tests/Pods-ChainUI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB0085A24D39FC2033E32FD10EC73836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C475BDE24842EA896C8AB8526DCC449 /* Pods-ChainUI_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainUI_Example/Pods-ChainUI_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainUI_Example/Pods-ChainUI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DAB2845A1133D123308FBB8BE8149A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB189482210D19F45DF30EFFF40DB15 /* Pods-ChainUI_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainUI_Tests/Pods-ChainUI_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainUI_Tests/Pods-ChainUI_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E7501749A4FB7FF4BF66A15DEB52597 /* Build configuration list for PBXNativeTarget "Pods-ChainUI_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0085A24D39FC2033E32FD10EC73836 /* Debug */,
+				2B2F8E4FCECF6FB185D8A6D30BFF77C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E449B78DDBCF51F3841600DB5D3D828 /* Build configuration list for PBXNativeTarget "ChainUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07CB0476DA6F6E36DC48C50DBD0603BE /* Debug */,
+				05A4EE7293C44607914909CE538BF6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84658C0F9FB72944CF3640F0F18CA139 /* Build configuration list for PBXNativeTarget "Pods-ChainUI_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB2845A1133D123308FBB8BE8149A2B /* Debug */,
+				B05BF2181857D7F0F08C2B37F9004138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

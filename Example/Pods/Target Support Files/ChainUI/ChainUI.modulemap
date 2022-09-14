@@ -1,0 +1,6 @@
+framework module ChainUI {
+  umbrella header "ChainUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
