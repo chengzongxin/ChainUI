@@ -42,12 +42,12 @@ TODO: Add long description of the pod here.
   s.subspec 'Public' do |ss|
     ss.source_files = 'ChainUI/Classes/Public/*.{h,m}'
     ss.public_header_files = "ChainUI/Classes/Public/*.h"
-    ss.dependency 'ChainUI/Private'
+    ss.dependency 'ChainUIKit/Private'
   end
   s.subspec 'Chainable' do |ss|
     ss.source_files = 'ChainUI/Classes/Chainable/*.{h,m}'
-    ss.dependency 'ChainUI/Public'
-    ss.dependency 'ChainUI/Private'
+    ss.dependency 'ChainUIKit/Public'
+    ss.dependency 'ChainUIKit/Private'
   end
   
   # s.resource_bundles = {
