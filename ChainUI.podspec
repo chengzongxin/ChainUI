@@ -32,8 +32,8 @@ TODO: Add long description of the pod here.
 
 #  s.source_files = 'ChainUI/Classes/**/*'
   
-  s.public_header_files = 'ChainUI/Classes/ChainUI/*.h'
-  s.source_files = 'ChainUI/Classes/ChainUI/*.{h,m}'
+  s.public_header_files = 'ChainUI/Classes/*.h'
+  s.source_files = 'ChainUI/Classes/*.{h,m}'
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
   s.subspec 'Private' do |ss|
     ss.source_files = 'ChainUI/Classes/Private/*.{h,m}'
